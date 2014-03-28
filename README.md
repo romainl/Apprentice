@@ -4,7 +4,7 @@
 
 Apprentice is a low-contrast Vim colorscheme based on the awesome [Sorcerer](http://www.vim.org/scripts/script.php?script_id=3299) by Jeet Sukumaran.
 
-It’s essentially a streamlined version of the original with a reduced palette entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.
+It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.
 
 ## Preparing your environment.
 
@@ -16,11 +16,11 @@ There’s nothing to do for GVim/MacVim as GUI Vim supports millions of colors b
 
 ### Terminal emulators
 
-Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about it by setting the correct `TERM` environment variable.
+Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminalhood by setting the correct `TERM` environment variable.
 
 Here are a bunch of common terminal emulators and their “ideal” `TERM`:
 
-| terminal emulator | `TERM`                  |
+| Terminal emulator | ”Ideal” `TERM`          |
 |-------------------|-------------------------|
 | xterm             | `xterm-256color`        |
 | Gnome terminal    | `xterm-256color`        |
@@ -53,11 +53,11 @@ A colorscheme must be placed in a directory named `colors` that’s somewhere in
     ~/.vim/bundle/apprentice/colors/apprentice.vim
     …
 
-How it ends up there is your call.
+How it ends up there is for you to decide.
 
 ## Enabling Apprentice.
 
-To test Apprentice, just type this command:
+To test Apprentice, just type this command from *normal* mode and hit `Enter`:
 
     :colorscheme apprentice
 
