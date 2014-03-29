@@ -1,10 +1,20 @@
 # Apprentice
 
-![Apprentice in action](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/python.png)
-
 Apprentice is a low-contrast Vim colorscheme based on the awesome [Sorcerer](http://www.vim.org/scripts/script.php?script_id=3299) by Jeet Sukumaran.
 
 It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.
+
+Python:
+
+![Python](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_py.png)
+
+JavaScript:
+
+![JavaScript](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_js.png)
+
+Vim:
+
+![Vim](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_vim.png)
 
 ## Preparing your environment.
 
