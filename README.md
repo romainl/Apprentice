@@ -74,3 +74,7 @@ To test Apprentice, just type this command from *normal* mode and hit `Enter`:
 If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`:
 
     colorscheme apprentice
+
+---
+
+If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is the negative version of Apprentice.
