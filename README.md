@@ -40,7 +40,7 @@ Here are a bunch of common terminal emulators and their “ideal” `TERM`:
 | X11/Gnome   | Terminator        | `xterm`        | `xterm-256color`        |
 | X11/KDE     | Konsole (KDE)     | `xterm`        | `xterm-256color`        |
 
-Please refer to your terminal emulator’s manual for how to do it.
+Please refer to your terminal emulator’s manual for how to set it up properly.
 
 ### Terminal multiplexers
 
