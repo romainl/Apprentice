@@ -42,6 +42,11 @@ Here are a bunch of common terminal emulators and their “ideal” `TERM`:
 
 Please refer to your terminal emulator’s manual for how to set it up properly.
 
+For best results, it’s recommended to adjust your background color to the one used in Apprentice:
+
+* xterm color: `235`
+* hexadecimal color: `#262626`
+
 ### Terminal multiplexers
 
 Screen and tmux don't respect your terminal emulator’s settings and set your `TERM` to their default value, `screen`. For better color support, the recommended `TERM` for both multiplexers is `screen-256color`.
