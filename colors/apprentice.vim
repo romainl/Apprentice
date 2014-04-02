@@ -207,4 +207,6 @@ hi link diffIdentical      WarningMsg
 hi link diffIsA            WarningMsg
 hi link diffNoEOL          WarningMsg
 hi link diffOnly           WarningMsg
+hi link diffRemoved        WarningMsg
+hi link diffAdded          String
 
