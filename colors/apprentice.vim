@@ -19,7 +19,7 @@ if &t_Co >= 256 || has('gui_running')
   hi Comment          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
   hi Constant         ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=NONE           gui=NONE
   hi Error            ctermbg=235  ctermfg=131  guibg=#262626 guifg=#af5f5f cterm=reverse        gui=reverse
-  hi Identifier       ctermbg=NONE ctermfg=103  guibg=NONE    guifg=#5f87af cterm=NONE           gui=NONE
+  hi Identifier       ctermbg=NONE ctermfg=67   guibg=NONE    guifg=#5f87af cterm=NONE           gui=NONE
   hi Ignore           ctermbg=NONE ctermfg=235  guibg=NONE    guifg=#262626 cterm=NONE           gui=NONE
   hi PreProc          ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=NONE           gui=NONE
   hi Special          ctermbg=NONE ctermfg=65   guibg=NONE    guifg=#5f875f cterm=NONE           gui=NONE
