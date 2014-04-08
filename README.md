@@ -26,7 +26,7 @@ There’s nothing to do for GVim/MacVim as GUI Vim supports millions of colors b
 
 ### Terminal emulators
 
-Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminalhood by setting the correct `TERM` environment variable.
+Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood by setting the correct `TERM` environment variable.
 
 Here are a bunch of common terminal emulators and their “ideal” `TERM`:
 
@@ -38,9 +38,11 @@ Here are a bunch of common terminal emulators and their “ideal” `TERM`:
 | X11         | URxvt             | `rxvt-unicode` | `rxvt-unicode-256color` |
 | X11/Gnome   | Gnome terminal    | `xterm`        | `xterm-256color`        |
 | X11/Gnome   | Terminator        | `xterm`        | `xterm-256color`        |
-| X11/KDE     | Konsole (KDE)     | `xterm`        | `xterm-256color`        |
+| X11/KDE     | Konsole           | `xterm`        | `xterm-256color`        |
 
 Please refer to your terminal emulator’s manual for how to set it up properly.
+
+NB: I’ve started [a wiki page](https://github.com/romainl/Apprentice/wiki/256-colors-and-you.) listing the procedures for the terminal emlators above.
 
 For best results, it’s recommended to adjust your background color to the one used in Apprentice:
 
