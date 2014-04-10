@@ -44,7 +44,7 @@ if &t_Co >= 256 || has('gui_running')
   hi WarningMsg       ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=NONE           gui=NONE
 
   hi TabLine          ctermbg=234  ctermfg=240  guibg=#1c1c1c guifg=#585858 cterm=NONE           gui=NONE
-  hi TabLineFill      ctermbg=234  ctermfg=234  guibg=#1c1c1c guifg=#1c1c1c cterm=NONE           gui=reverse
+  hi TabLineFill      ctermbg=234  ctermfg=234  guibg=#1c1c1c guifg=#1c1c1c cterm=NONE           gui=NONE
   hi TabLineSel       ctermbg=236  ctermfg=73   guibg=#303030 guifg=#5fafaf cterm=NONE           gui=NONE
 
   hi Cursor           ctermbg=242  ctermfg=NONE guibg=#6c6c6c guifg=NONE    cterm=NONE           gui=NONE
@@ -104,7 +104,7 @@ else
   hi Todo             ctermbg=NONE        ctermfg=NONE        cterm=reverse
   hi Type             ctermbg=NONE        ctermfg=DarkMagenta cterm=NONE
 
-  hi Error            ctermbg=Red         ctermfg=White       cterm=NONE
+  hi Error            ctermbg=Red         ctermfg=Black       cterm=NONE
   hi Ignore           ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi Underlined       ctermbg=NONE        ctermfg=Cyan        cterm=underline
 
