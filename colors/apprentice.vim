@@ -196,7 +196,7 @@ hi link Tag                Special
 hi link Typedef            Type
 
 hi link htmlEndTag         htmlTagName
-hi link htmlLink           String
+hi link htmlLink           Function
 hi link htmlSpecialTagName htmlTagName
 hi link htmlTag            htmlTagName
 
