@@ -6,15 +6,15 @@ It’s essentially a streamlined version of the original with a reduced number o
 
 Python:
 
-![Python](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_py.png)
+![Python](http://romainl.github.io/Apprentice/images/apprentice_py.png)
 
 JavaScript:
 
-![JavaScript](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_js.png)
+![JavaScript](http://romainl.github.io/Apprentice/images/apprentice_js.png)
 
 Vim:
 
-![Vim](https://raw.githubusercontent.com/romainl/Apprentice/master/screenshots/apprentice_vim.png)
+![Vim](http://romainl.github.io/Apprentice/images/apprentice_vim.png)
 
 ## Preparing your environment.
 
