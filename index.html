@@ -1,4 +1,159 @@
-<h1>Apprentice.vim</h1>
-<img src="images/apprentice_py.png" width="720" height="427" alt="Python" />
-<img src="images/apprentice_js.png" width="720" height="427" alt="JavaScript" />
-<img src="images/apprentice_vim.png" width="720" height="427" alt="Vim" />
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Apprentice</title>
+    <link rel="stylesheet" href="css/apprentice.css" type="text/css" media="screen">
+
+  </head>
+
+  <body>
+    <h1><a name="user-content-apprentice" class="anchor" href="#apprentice"></a>Apprentice</h1>
+
+    <p>Apprentice is a low-contrast colorscheme for Vim based on the awesome <a href="http://www.vim.org/scripts/script.php?script_id=3299">Sorcerer</a> by Jeet Sukumaran.</p>
+
+    <p>It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.</p>
+
+    <p>Python:</p>
+    <p>
+      <img src="images/apprentice_py.png" width="720" height="427" alt="Python" />
+    </p>
+
+    <p>JavaScript:</p>
+
+    <p>
+      <img src="images/apprentice_js.png" width="720" height="427" alt="JavaScript" />
+    </p>
+
+    <p>Vim:</p>
+
+    <p>
+      <img src="images/apprentice_vim.png" width="720" height="427" alt="Vim" />
+    </p>
+
+    <h2><a name="user-content-preparing-your-environment" class="anchor" href="#preparing-your-environment"></a>Preparing your environment.</h2>
+
+    <p>Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful
+      environments.</p>
+
+    <h3><a name="user-content-gvimmacvim" class="anchor" href="#gvimmacvim"></a>GVim/MacVim</h3>
+
+    <p>There’s nothing to do for GVim/MacVim as GUI Vim supports millions of colors by default.</p>
+
+    <h3><a name="user-content-terminal-emulators" class="anchor" href="#terminal-emulators"></a>Terminal emulators</h3>
+
+    <p>Most terminal emulators in use nowadays <em>can</em> display 256 colors but most of them use a default <code>TERM</code> that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood
+      by setting the correct <code>TERM</code> environment variable.</p>
+
+    <p>Here are a bunch of common terminal emulators and their “ideal” <code>TERM</code>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Environment</th>
+          <th>Terminal emulator</th>
+          <th>Default <code>TERM</code></th>
+          <th>”Ideal” <code>TERM</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mac OS X</td>
+          <td>iTerm2.app</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+        <tr>
+          <td>Mac OS X</td>
+          <td>Terminal.app</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+        <tr>
+          <td>X11</td>
+          <td>xterm</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+        <tr>
+          <td>X11</td>
+          <td>URxvt</td>
+          <td><code>rxvt-unicode</code></td>
+          <td><code>rxvt-unicode-256color</code></td>
+        </tr>
+        <tr>
+          <td>X11/Gnome</td>
+          <td>Gnome terminal</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+        <tr>
+          <td>X11/Gnome</td>
+          <td>Terminator</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+        <tr>
+          <td>X11/KDE</td>
+          <td>Konsole</td>
+          <td><code>xterm</code></td>
+          <td><code>xterm-256color</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Please refer to your terminal emulator’s manual for how to set it up properly.</p>
+
+    <p>NB: I’ve started <a href="https://github.com/romainl/Apprentice/wiki/256-colors-and-you.">a wiki page</a> listing the procedures for the terminal emlators above.</p>
+
+    <p>For best results, it’s recommended to adjust your background color to the one used in Apprentice:</p>
+
+    <ul>
+      <li>xterm color: <code>235</code>
+      </li>
+      <li>hexadecimal color: <code>#262626</code>
+      </li>
+    </ul>
+    <h3><a name="user-content-terminal-multiplexers" class="anchor" href="#terminal-multiplexers"></a>Terminal multiplexers</h3>
+
+    <p>Screen and tmux don't respect your terminal emulator’s settings and set your <code>TERM</code> to their default value, <code>screen</code>. For better color support, the recommended <code>TERM</code> for both multiplexers is <code>screen-256color</code>.</p>
+
+    <h4><a name="user-content-tmux" class="anchor" href="#tmux"></a>tmux</h4>
+
+    <p>Put this line in <code>~/.tmux.conf</code>:</p>
+
+    <pre><code>set -g default-terminal "screen-256color"</code></pre>
+
+    <h4><a name="user-content-screen" class="anchor" href="#screen"></a>screen</h4>
+
+    <p>Put this line in <code>~/.screenrc</code>:</p>
+
+    <pre><code>term "screen-256color"</code></pre>
+
+    <h2><a name="user-content-installing-apprentice" class="anchor" href="#installing-apprentice"></a>Installing Apprentice.</h2>
+
+    <p>A colorscheme must be placed in a directory named <code>colors</code> that’s somewhere in Vim’s <code>runtimepath</code>:</p>
+
+    <pre><code>~/.vim/colors/apprentice.vim
+~/.vim/bundle/apprentice/colors/apprentice.vim
+…</code></pre>
+
+    <p>How it ends up there is for you to decide.</p>
+
+    <h2><a name="user-content-enabling-apprentice" class="anchor" href="#enabling-apprentice"></a>Enabling Apprentice.</h2>
+
+    <p>To test Apprentice, just type this command from <em>normal</em> mode and hit <code>Enter</code>:</p>
+
+    <pre><code>:colorscheme apprentice</code></pre>
+
+    <p>If you like what you see and want to make Apprentice your default colorscheme, add this line to your <code>~/.vimrc</code>:</p>
+
+    <pre><code>colorscheme apprentice</code></pre>
+
+    <hr>
+    <p>If light colorschemes are more your thing, <a href="https://github.com/romainl/Disciple">Disciple</a> is the negative version of Apprentice.</p>
+  </body>
+
+</html>
