@@ -4,21 +4,21 @@ Apprentice is a low-contrast colorscheme for Vim based on the awesome [Sorcerer]
 
 It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.
 
-Python:
-
-![Python](http://romainl.github.io/Apprentice/images/apprentice_py.png)
-
-JavaScript:
+JavaScript in GVim:
 
 ![JavaScript](http://romainl.github.io/Apprentice/images/apprentice_js.png)
 
-Vim:
+Python in Gnome terminal with `TERM=xterm-256color`:
+
+![Python](http://romainl.github.io/Apprentice/images/apprentice_py.png)
+
+Vimscript in Gnome Terminal with `TERM=xterm`:
 
 ![Vim](http://romainl.github.io/Apprentice/images/apprentice_vim.png)
 
 ## Preparing your environment.
 
-Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful environments.
+Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and GUI Vim (GVim/MacVim). It supports less capable terminal emulators in the sense that you still get colors, but it will definitely look “better” in more powerful environments.
 
 ### GVim/MacVim
 
