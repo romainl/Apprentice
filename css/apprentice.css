@@ -24,10 +24,17 @@ th td {
   border-top: none;
 }
 pre, code {
-  background-color: #eee;
+  background-color: #ddd;
 }
 pre {
   padding: 7px;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+}
+code {
+  padding: 0 3px;
 }
 p, hr {
   margin-left: 0;
