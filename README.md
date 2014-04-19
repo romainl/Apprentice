@@ -1,4 +1,4 @@
-# Apprentice
+# ![Apprentice](http://romainl.github.io/Apprentice/images/logo.png)
 
 Apprentice is a low-contrast colorscheme for Vim based on the awesome [Sorcerer](http://www.vim.org/scripts/script.php?script_id=3299) by Jeet Sukumaran.
 
