@@ -69,11 +69,56 @@ Put this line in `~/.screenrc`:
 
 A colorscheme must be placed in a directory named `colors` that’s somewhere in Vim’s `runtimepath`:
 
-    ~/.vim/colors/apprentice.vim
-    ~/.vim/bundle/apprentice/colors/apprentice.vim
-    …
+The canonical location is:
 
-How it ends up there is for you to decide.
+    ~/.vim/colors/apprentice.vim
+
+but it could be:
+
+    ~/.vim/bundle/apprentice/colors/apprentice.vim
+
+or whatever works for you.
+
+Here are the most common installation methods:
+
+### Manually:
+
+1. Download [the latest release](https://github.com/romainl/Apprentice/releases/latest).
+2. Unzip it somewhere on your machine.
+3. Copy the file `colors/apprentice.vim` to `~/.vim/colors/apprentice.vim`.
+
+### With [Pathogen](https://github.com/tpope/vim-pathogen):
+
+#### The grumpy way:
+
+1. Download [the latest release](https://github.com/romainl/Apprentice/releases/latest).
+2. Unzip it under `~/.vim/bundle/`.
+
+#### The hipster way:
+
+    $ git clone https://github.com/romainl/Apprentice.git ~/.vim/bundle/apprentice
+
+### With [Vundle](https://github.com/gmarik/Vundle.vim):
+
+1. Add this line to your `~/.vimrc`, together with the rest of your `Plugin` lines:
+
+        Plugin 'romainl/Apprentice'
+
+2. Run this command to finish the installation:
+
+        :PluginInstall
+
+### With [NeoBundle](https://github.com/Shougo/neobundle.vim):
+
+1. Add this line to your `~/.vimrc`, together with the rest of your `NeoBundle` lines:
+
+        NeoBundle 'romainl/Apprentice'
+
+2. Run this command to finish the installation:
+
+        :NeoBundleInstall
+
+Hmmm… I wonder where does that strange feeling of déjà-vu comes from?
 
 ## Enabling Apprentice.
 
@@ -81,7 +126,7 @@ To test Apprentice, just type this command from *normal* mode and hit `Enter`:
 
     :colorscheme apprentice
 
-If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`:
+If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`, preferably near the end:
 
     colorscheme apprentice
 
