@@ -92,32 +92,31 @@ if &t_Co >= 256 || has('gui_running')
 
 else
   hi Normal           ctermbg=NONE        ctermfg=Grey        cterm=NONE
-  hi Boolean          ctermbg=NONE        ctermfg=Yellow      cterm=NONE
-  hi Comment          ctermbg=NONE        ctermfg=Blue        cterm=NONE
-  hi Constant         ctermbg=NONE        ctermfg=Yellow      cterm=NONE
-  hi Function         ctermbg=NONE        ctermfg=Yellow      cterm=NONE
+  hi Comment          ctermbg=NONE        ctermfg=Black       cterm=bold
+  hi Constant         ctermbg=NONE        ctermfg=Red         cterm=bold
+  hi Function         ctermbg=NONE        ctermfg=Yellow      cterm=bold
   hi Identifier       ctermbg=NONE        ctermfg=Blue        cterm=NONE
   hi PreProc          ctermbg=NONE        ctermfg=Cyan        cterm=NONE
-  hi Special          ctermbg=NONE        ctermfg=Green       cterm=NONE
+  hi Special          ctermbg=NONE        ctermfg=Green       cterm=bold
   hi Statement        ctermbg=NONE        ctermfg=Cyan        cterm=NONE
   hi String           ctermbg=NONE        ctermfg=Green       cterm=NONE
   hi Todo             ctermbg=NONE        ctermfg=NONE        cterm=reverse
-  hi Type             ctermbg=NONE        ctermfg=Magenta     cterm=NONE
+  hi Type             ctermbg=NONE        ctermfg=DarkMagenta     cterm=bold
 
   hi Error            ctermbg=Black       ctermfg=Red         cterm=reverse
   hi Ignore           ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi Underlined       ctermbg=NONE        ctermfg=Cyan        cterm=underline
 
-  hi LineNr           ctermbg=NONE        ctermfg=Blue        cterm=NONE
-  hi NonText          ctermbg=NONE        ctermfg=Blue        cterm=NONE
+  hi LineNr           ctermbg=NONE        ctermfg=DarkGrey    cterm=bold
+  hi NonText          ctermbg=NONE        ctermfg=DarkGrey    cterm=bold
 
   hi Pmenu            ctermbg=Grey        ctermfg=Black       cterm=NONE
   hi PmenuSbar        ctermbg=Grey        ctermfg=NONE        cterm=NONE
   hi PmenuSel         ctermbg=Green       ctermfg=Black       cterm=NONE
   hi PmenuThumb       ctermbg=Green       ctermfg=NONE        cterm=NONE
 
-  hi ErrorMsg         ctermbg=NONE        ctermfg=Red         cterm=NONE
-  hi ModeMsg          ctermbg=NONE        ctermfg=Green       cterm=NONE
+  hi ErrorMsg         ctermbg=Red         ctermfg=Black       cterm=NONE
+  hi ModeMsg          ctermbg=Green       ctermfg=Black       cterm=NONE
   hi MoreMsg          ctermbg=NONE        ctermfg=Cyan        cterm=NONE
   hi Question         ctermbg=NONE        ctermfg=Green       cterm=NONE
   hi WarningMsg       ctermbg=NONE        ctermfg=Red         cterm=NONE
@@ -142,11 +141,11 @@ else
   hi FoldColumn       ctermbg=Red         ctermfg=White       cterm=NONE
   hi Folded           ctermbg=Red         ctermfg=White       cterm=NONE
 
-  hi VertSplit        ctermbg=Cyan        ctermfg=Cyan        cterm=NONE
+  hi VertSplit        ctermbg=Blue        ctermfg=Blue        cterm=NONE
   hi WildMenu         ctermbg=Yellow      ctermfg=Black       cterm=NONE
 
   hi Function         ctermbg=NONE        ctermfg=Yellow      cterm=NONE
-  hi SpecialKey       ctermbg=NONE        ctermfg=Magenta     cterm=NONE
+  hi SpecialKey       ctermbg=NONE        ctermfg=DarkGrey    cterm=bold
   hi Title            ctermbg=NONE        ctermfg=White       cterm=bold
 
   hi DiffAdd          ctermbg=Green       ctermfg=Black       cterm=NONE
