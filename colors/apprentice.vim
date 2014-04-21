@@ -30,7 +30,7 @@ if &t_Co >= 256 || has('gui_running')
   hi Underlined       ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=underline      gui=underline
 
   hi LineNr           ctermbg=234  ctermfg=240  guibg=#1c1c1c guifg=#585858 cterm=NONE           gui=NONE
-  hi NonText          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
+  hi NonText          ctermbg=235  ctermfg=240  guibg=#262626 guifg=#585858 cterm=NONE           gui=NONE
 
   hi Pmenu            ctermbg=238  ctermfg=250  guibg=#444444 guifg=#bcbcbc cterm=NONE           gui=NONE
   hi PmenuSbar        ctermbg=240  ctermfg=NONE guibg=#585858 guifg=NONE    cterm=NONE           gui=NONE
@@ -91,7 +91,7 @@ if &t_Co >= 256 || has('gui_running')
   hi SignColumn       ctermbg=238  ctermfg=235  guibg=#444444 guifg=#262626 cterm=NONE           gui=NONE
 
 else
-  hi Normal           ctermbg=NONE        ctermfg=Grey        cterm=NONE
+  hi Normal           ctermbg=Black       ctermfg=Grey        cterm=NONE
   hi Comment          ctermbg=NONE        ctermfg=Black       cterm=bold
   hi Constant         ctermbg=NONE        ctermfg=Red         cterm=bold
   hi Function         ctermbg=NONE        ctermfg=Yellow      cterm=bold
@@ -108,7 +108,7 @@ else
   hi Underlined       ctermbg=NONE        ctermfg=Cyan        cterm=underline
 
   hi LineNr           ctermbg=NONE        ctermfg=DarkGrey    cterm=bold
-  hi NonText          ctermbg=NONE        ctermfg=DarkGrey    cterm=bold
+  hi NonText          ctermbg=Black       ctermfg=DarkGrey    cterm=bold
 
   hi Pmenu            ctermbg=Grey        ctermfg=Black       cterm=NONE
   hi PmenuSbar        ctermbg=Grey        ctermfg=NONE        cterm=NONE
@@ -208,4 +208,3 @@ hi link diffNoEOL          WarningMsg
 hi link diffOnly           WarningMsg
 hi link diffRemoved        WarningMsg
 hi link diffAdded          String
-
