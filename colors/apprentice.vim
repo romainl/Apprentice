@@ -3,8 +3,6 @@
 " Essentially a streamlining and conversion to X11 colors of
 " 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
 
-set background=dark
-
 hi clear
 
 if exists('syntax_on')
@@ -16,6 +14,9 @@ let colors_name = 'apprentice'
 
 if &t_Co >= 256 || has('gui_running')
   hi Normal           ctermbg=235  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
+
+  set background=dark
+
   hi Comment          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
   hi Constant         ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=NONE           gui=NONE
   hi Error            ctermbg=235  ctermfg=131  guibg=#262626 guifg=#af5f5f cterm=reverse        gui=reverse
@@ -92,6 +93,9 @@ if &t_Co >= 256 || has('gui_running')
 
 else
   hi Normal           ctermbg=Black       ctermfg=Grey        cterm=NONE
+
+  set background=dark
+
   hi Comment          ctermbg=NONE        ctermfg=Black       cterm=bold
   hi Constant         ctermbg=NONE        ctermfg=Red         cterm=bold
   hi Function         ctermbg=NONE        ctermfg=Yellow      cterm=bold
