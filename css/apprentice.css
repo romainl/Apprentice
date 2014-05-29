@@ -1,13 +1,13 @@
 body {
-  background-color: #fff;
-  color: #262626;
+  background-color: #262626;
+  color: #bcbcbc;
   font-size: 14px;
   font-family: sans-serif;
   margin: 2em auto;
   width: 720px;
 }
 h1 {
-  background: transparent url(../images/logo.png) no-repeat scroll top center;
+  background: transparent url(../images/logo_bcbcbc.png) no-repeat scroll top center;
   height: 230px;
   text-indent: -9000px;
 }
@@ -16,7 +16,7 @@ table {
   width: 100%;
 }
 td {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #585858;
   padding: 0 2em;
   line-height: 2;
 }
@@ -24,14 +24,10 @@ th td {
   border-top: none;
 }
 pre, code {
-  background-color: #ddd;
+  background-color: #1c1c1c;
 }
 pre {
   padding: 7px;
-  border-top: 1px solid #bbb;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #eee;
 }
 code {
   padding: 0 3px;
@@ -40,6 +36,23 @@ p, hr {
   margin-left: 0;
   margin-right: 0;
 }
+p {
+  line-height: 1.5;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #585858;
+}
 h1, h2, h3, h4, p, pre, hr {
   margin: 1.5em 0 0.25em 0;
+}
+a:link {
+  color: #5f87af;
+}
+a:visited {
+  color: #8787af;
+}
+a:active {
+  color: #af5f5f;
 }
