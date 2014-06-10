@@ -3,7 +3,7 @@ body {
   color: #bcbcbc;
   font-size: 14px;
   font-family: sans-serif;
-  margin: 2em auto;
+  margin: 0 auto;
   width: 720px;
 }
 h1 {
@@ -11,16 +11,16 @@ h1 {
   height: 230px;
   text-indent: -9000px;
 }
-table {
+table#term {
   border-collapse: collapse;
   width: 100%;
 }
-td {
+table#term td {
   border-top: 1px solid #585858;
   padding: 0 2em;
   line-height: 2;
 }
-th td {
+table#term th table#term td {
   border-top: none;
 }
 pre, code {
@@ -38,6 +38,9 @@ p, hr {
 }
 p {
   line-height: 1.5;
+}
+p#closing {
+  margin-bottom: 2em;
 }
 hr {
   border: none;
