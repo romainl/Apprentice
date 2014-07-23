@@ -89,19 +89,18 @@ The same JavaScript as above, in iTerm, with `TERM=xterm`, using the color palet
 
 Use a color picker or copy/paste these values:
 
-| Intensity | Name    | Normal  | Bright  |
-|-----------|---------|---------|---------|
-| 0         | Black   | #1C1C1C | #444444 |
-| 1         | Red     | #AF5F5F | #FF8700 |
-| 2         |Green    | #5F875F | #87AF87 |
-| 3         | Yellow  | #87875F | #FFFFAF |
-| 4         | Blue    | #5F87AF | #8FAFD7 |
-| 5         | Magenta | #5F5F87 | #8787AF |
-| 6         | Cyan    | #5F8787 | #5FAFAF |
-| 7         |  White  | #6C6C6C | #FFFFFF |
-
-| Foreground color    | #BCBCBC           |
-| Background color    | #262626           |
+| Intensity | Name    | Normal    | Bright    |
+|-----------|---------|-----------|-----------|
+| 0         | Black   | `#1C1C1C` | `#444444` |
+| 1         | Red     | `#AF5F5F` | `#FF8700` |
+| 2         | Green   | `#5F875F` | `#87AF87` |
+| 3         | Yellow  | `#87875F` | `#FFFFAF` |
+| 4         | Blue    | `#5F87AF` | `#8FAFD7` |
+| 5         | Magenta | `#5F5F87` | `#8787AF` |
+| 6         | Cyan    | `#5F8787` | `#5FAFAF` |
+| 7         | White   | `#6C6C6C` | `#FFFFFF` |
+|| Foreground color   | `#BCBCBC`            ||
+|| Background color   | `#262626`            ||
 
 ## Enabling Apprentice.
 
