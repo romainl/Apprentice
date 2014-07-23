@@ -83,7 +83,7 @@ or whatever works for you.
 
 As an alternative to `xterm-256color`, you can also leave your `TERM` at its default value, (usually `xterm` or `screen`, as we saw earlier) and set your terminal emulator to use the Apprentice colorscheme instead of its default colors.
 
-The same JavaScript as above, in iTerm, with TERM=xterm, using the color palette below:
+The same JavaScript as above, in iTerm, with `TERM=xterm`, using the color palette below:
 
 ![image](http://romainl.github.io/Apprentice/images/016termapprentice.png)
 
@@ -99,8 +99,8 @@ Use a color picker or copy/paste these values:
 | 5         | Magenta | #5F5F87 | #8787AF |
 | 6         | Cyan    | #5F8787 | #5FAFAF |
 | 7         |  White  | #6C6C6C | #FFFFFF |
-| Foreground color    | #BCBCBC           |
-| Background color    | #262626           |
+| Foreground color   || #BCBCBC          ||
+| Background color   || #262626          ||
 
 ## Enabling Apprentice.
 
