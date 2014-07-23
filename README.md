@@ -99,8 +99,9 @@ Use a color picker or copy/paste these values:
 | 5         | Magenta | #5F5F87 | #8787AF |
 | 6         | Cyan    | #5F8787 | #5FAFAF |
 | 7         |  White  | #6C6C6C | #FFFFFF |
-| Foreground color   || #BCBCBC          ||
-| Background color   || #262626          ||
+
+| Foreground color    | #BCBCBC           |
+| Background color    | #262626           |
 
 ## Enabling Apprentice.
 
