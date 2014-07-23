@@ -91,16 +91,16 @@ Use a color picker or copy/paste these values:
 
 | Intensity | Name    | Normal                                                                      | Bright                                                                      |
 |-----------|---------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| 0         | Black   | `#1C1C1C` ![#1C1C1C](http://romainl.github.io/Apprentive/images/1c1c1c.png) | `#444444` ![#444444](http://romainl.github.io/Apprentive/images/444444.png) |
-| 1         | Red     | `#AF5F5F` ![#AF5F5F](http://romainl.github.io/Apprentive/images/af5f5f.png) | `#FF8700` ![#FF8700](http://romainl.github.io/Apprentive/images/ff8700.png) |
-| 2         | Green   | `#5F875F` ![#5F875F](http://romainl.github.io/Apprentive/images/5f875f.png) | `#87AF87` ![#87AF87](http://romainl.github.io/Apprentive/images/87af87.png) |
-| 3         | Yellow  | `#87875F` ![#87875F](http://romainl.github.io/Apprentive/images/87875f.png) | `#FFFFAF` ![#FFFFAF](http://romainl.github.io/Apprentive/images/ffffaf.png) |
-| 4         | Blue    | `#5F87AF` ![#5F87AF](http://romainl.github.io/Apprentive/images/5f87af.png) | `#8FAFD7` ![#8FAFD7](http://romainl.github.io/Apprentive/images/8fafd7.png) |
-| 5         | Magenta | `#5F5F87` ![#5F5F87](http://romainl.github.io/Apprentive/images/5f5f87.png) | `#8787AF` ![#8787AF](http://romainl.github.io/Apprentive/images/8787af.png) |
-| 6         | Cyan    | `#5F8787` ![#5F8787](http://romainl.github.io/Apprentive/images/5f8787.png) | `#5FAFAF` ![#5FAFAF](http://romainl.github.io/Apprentive/images/5fafaf.png) |
-| 7         | White   | `#6C6C6C` ![#6C6C6C](http://romainl.github.io/Apprentive/images/6c6c6c.png) | `#FFFFFF` ![#FFFFFF](http://romainl.github.io/Apprentive/images/ffffff.png) |
-|| Foreground color   | `#BCBCBC` ![#BCBCBC](http://romainl.github.io/Apprentive/images/bcbcbc.png)                                                                              ||
-|| Background color   | `#262626` ![#262626](http://romainl.github.io/Apprentive/images/262626.png)                                                                              ||
+| 0         | Black   | `#1C1C1C` ![#1C1C1C](http://romainl.github.io/Apprentice/images/1c1c1c.png) | `#444444` ![#444444](http://romainl.github.io/Apprentice/images/444444.png) |
+| 1         | Red     | `#AF5F5F` ![#AF5F5F](http://romainl.github.io/Apprentice/images/af5f5f.png) | `#FF8700` ![#FF8700](http://romainl.github.io/Apprentice/images/ff8700.png) |
+| 2         | Green   | `#5F875F` ![#5F875F](http://romainl.github.io/Apprentice/images/5f875f.png) | `#87AF87` ![#87AF87](http://romainl.github.io/Apprentice/images/87af87.png) |
+| 3         | Yellow  | `#87875F` ![#87875F](http://romainl.github.io/Apprentice/images/87875f.png) | `#FFFFAF` ![#FFFFAF](http://romainl.github.io/Apprentice/images/ffffaf.png) |
+| 4         | Blue    | `#5F87AF` ![#5F87AF](http://romainl.github.io/Apprentice/images/5f87af.png) | `#8FAFD7` ![#8FAFD7](http://romainl.github.io/Apprentice/images/8fafd7.png) |
+| 5         | Magenta | `#5F5F87` ![#5F5F87](http://romainl.github.io/Apprentice/images/5f5f87.png) | `#8787AF` ![#8787AF](http://romainl.github.io/Apprentice/images/8787af.png) |
+| 6         | Cyan    | `#5F8787` ![#5F8787](http://romainl.github.io/Apprentice/images/5f8787.png) | `#5FAFAF` ![#5FAFAF](http://romainl.github.io/Apprentice/images/5fafaf.png) |
+| 7         | White   | `#6C6C6C` ![#6C6C6C](http://romainl.github.io/Apprentice/images/6c6c6c.png) | `#FFFFFF` ![#FFFFFF](http://romainl.github.io/Apprentice/images/ffffff.png) |
+|| Foreground color   | `#BCBCBC` ![#BCBCBC](http://romainl.github.io/Apprentice/images/bcbcbc.png)                                                                              ||
+|| Background color   | `#262626` ![#262626](http://romainl.github.io/Apprentice/images/262626.png)                                                                              ||
 
 ## Enabling Apprentice.
 
