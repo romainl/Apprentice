@@ -15,12 +15,16 @@ table#term {
   border-collapse: collapse;
   width: 100%;
 }
-table#term td {
+table#term td, table#palette td {
   border-top: 1px solid #585858;
   padding: 0 2em;
-  line-height: 2;
+  line-height: 3;
 }
-table#term th table#term td {
+table#term th, table#palette td, table#palette th {
+  padding: 0 2em;
+  line-height: 3;
+}
+table#term th {
   border-top: none;
 }
 pre, code {
