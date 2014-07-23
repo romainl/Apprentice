@@ -4,21 +4,21 @@ Apprentice is a low-contrast colorscheme for Vim based on the awesome [Sorcerer]
 
 It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.
 
-JavaScript in GVim:
+Some JavaScript, in MacVim:
 
-![JavaScript](http://romainl.github.io/Apprentice/images/apprentice_js.png)
+![image](http://romainl.github.io/Apprentice/images/0MacVim.png)
 
-Python in Gnome terminal with `TERM=xterm-256color`:
+The same JavaScript, in iTerm, with `TERM=xterm-256color`:
 
-![Python](http://romainl.github.io/Apprentice/images/apprentice_py.png)
+![image](http://romainl.github.io/Apprentice/images/0256term.png)
 
-Vimscript in Gnome Terminal with `TERM=xterm`:
+The same JavaScript, in iTerm, with `TERM=xterm`, using the default xterm color palette:
 
-![Vim](http://romainl.github.io/Apprentice/images/apprentice_vim.png)
+![image](http://romainl.github.io/Apprentice/images/016termxterm.png)
 
 ## Preparing your environment.
 
-Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and GUI Vim (GVim/MacVim). It supports less capable terminal emulators in the sense that you still get colors, but it will definitely look “better” in more powerful environments.
+Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and in GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful environments.
 
 ### GVim/MacVim
 
@@ -44,7 +44,7 @@ Please refer to your terminal emulator’s manual for how to set it up properly.
 
 NB: I’ve started [a wiki page](https://github.com/romainl/Apprentice/wiki/256-colors-and-you.) listing the procedures for the terminal emlators above.
 
-For best results, it’s recommended to adjust your background color to the one used in Apprentice:
+For best results, it’s recommended to adjust your background color to the one used in the GUI/256color version of Apprentice:
 
 * xterm color: `235`
 * hexadecimal color: `#262626`
@@ -78,6 +78,29 @@ but it could be:
     ~/.vim/bundle/apprentice/colors/apprentice.vim
 
 or whatever works for you.
+
+### Working with a 8 colors terminal
+
+As an alternative to `xterm-256color`, you can also leave your `TERM` at its default value, (usually `xterm` or `screen`, as we saw earlier) and set your terminal emulator to use the Apprentice colorscheme instead of its default colors.
+
+The same JavaScript as above, in iTerm, with TERM=xterm, using the color palette below:
+
+![image](http://romainl.github.io/Apprentice/images/016termapprentice.png)
+
+Use a color picker or copy/paste these values:
+
+| Intensity | Name    | Normal  | Bright  |
+|-----------|---------|---------|---------|
+| 0         | Black   | #1C1C1C | #444444 |
+| 1         | Red     | #AF5F5F | #FF8700 |
+| 2         |Green    | #5F875F | #87AF87 |
+| 3         | Yellow  | #87875F | #FFFFAF |
+| 4         | Blue    | #5F87AF | #8FAFD7 |
+| 5         | Magenta | #5F5F87 | #8787AF |
+| 6         | Cyan    | #5F8787 | #5FAFAF |
+| 7         |  White  | #6C6C6C | #FFFFFF |
+| Foreground color    | #BCBCBC           |
+| Background color    | #262626           |
 
 ## Enabling Apprentice.
 
