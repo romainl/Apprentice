@@ -11,239 +11,177 @@
   </head>
 
   <body>
-    <table cellpadding="0" cellspacing="0" border="0" width="720">
-      <tr>
-        <td style="width:32px;height:72px;background:#1c1c1c;"></td>
-        <td style="width:32px;height:72px;background:#262626;"></td>
-        <td style="width:32px;height:72px;background:#303030;"></td>
-        <td style="width:32px;height:72px;background:#444444;"></td>
-        <td style="width:32px;height:72px;background:#585858;"></td>
-        <td style="width:32px;height:72px;background:#6c6c6c;"></td>
-        <td style="width:32px;height:72px;background:#bcbcbc;"></td>
-        <td style="width:32px;height:72px;background:#ffffff;"></td>
-        <td style="width:32px;height:72px;background:#5f5f87;"></td>
-        <td style="width:32px;height:72px;background:#8787af;"></td>
-        <td style="width:32px;height:72px;background:#5f875f;"></td>
-        <td style="width:32px;height:72px;background:#87af87;"></td>
-        <td style="width:32px;height:72px;background:#5f8787;"></td>
-        <td style="width:32px;height:72px;background:#5fafaf;"></td>
-        <td style="width:32px;height:72px;background:#5f87af;"></td>
-        <td style="width:32px;height:72px;background:#8fafd7;"></td>
-        <td style="width:32px;height:72px;background:#af5f5f;"></td>
-        <td style="width:32px;height:72px;background:#ff8700;"></td>
-        <td style="width:32px;height:72px;background:#87875f;"></td>
-        <td style="width:32px;height:72px;background:#ffffaf;"></td>
-      </tr>
-    </table>
-
-    <h1>Apprentice</h1>
-
-    <p><a href="https://github.com/romainl/Apprentice" title="Apprentice on github.com">Apprentice</a> is a low-contrast colorscheme for Vim based on the awesome <a href="http://www.vim.org/scripts/script.php?script_id=3299" title="Sorcerer on vim.org">Sorcerer</a> by Jeet Sukumaran.</p>
-
-    <p>It’s essentially a streamlined version of the original with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256 colors-ready terminal emulators and GUI Vim.</p>
-
-    <p>Some JavaScript, in MacVim:</p>
-
-    <p>
-      <img src="images/0MacVim.png" width="720" height="710" alt="MacVim" />
-    </p>
-
-    <p>The same JavaScript, in iTerm, with <code>TERM=xterm-256color</code>:</p>
-
-    <p>
-      <img src="images/0256term.png" width="720" height="710" alt="iTerm, xterm-256color" />
-    </p>
-
-    <p>The same JavaScript, in iTerm, with <code>TERM=xterm</code>, using the default xterm color palette:</p>
-
-    <p>
-      <img src="images/016termxterm.png" width="720" height="710" alt="iTerm, xterm" />
-    </p>
-
-    <h2>Preparing your environment.</h2>
-
-    <p>Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and in GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful environments.</p>
-
-    <h3>GVim/MacVim</h3>
-
-    <p>There’s nothing to do for GVim/MacVim as GUI Vim supports millions of colors by default.</p>
-
-    <h3>Terminal emulators</h3>
-
-    <p>Most terminal emulators in use nowadays <em>can</em> display 256 colors but most of them use a default <code>TERM</code> that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood by setting the correct <code>TERM</code> environment variable.</p>
-
-    <p>Here are a bunch of common terminal emulators and their “ideal” <code>TERM</code>:</p>
-
-    <table id="term">
-      <thead>
+    <div>
+      <table cellpadding="0" cellspacing="0" border="0" width="720">
         <tr>
-          <th>Environment</th>
-          <th>Terminal emulator</th>
-          <th>Default <code>TERM</code></th>
-          <th>“Ideal” <code>TERM</code></th>
+          <td style="width:32px;height:72px;background:#1c1c1c;"></td>
+          <td style="width:32px;height:72px;background:#262626;"></td>
+          <td style="width:32px;height:72px;background:#303030;"></td>
+          <td style="width:32px;height:72px;background:#444444;"></td>
+          <td style="width:32px;height:72px;background:#585858;"></td>
+          <td style="width:32px;height:72px;background:#6c6c6c;"></td>
+          <td style="width:32px;height:72px;background:#bcbcbc;"></td>
+          <td style="width:32px;height:72px;background:#ffffff;"></td>
+          <td style="width:32px;height:72px;background:#5f5f87;"></td>
+          <td style="width:32px;height:72px;background:#8787af;"></td>
+          <td style="width:32px;height:72px;background:#5f875f;"></td>
+          <td style="width:32px;height:72px;background:#87af87;"></td>
+          <td style="width:32px;height:72px;background:#5f8787;"></td>
+          <td style="width:32px;height:72px;background:#5fafaf;"></td>
+          <td style="width:32px;height:72px;background:#5f87af;"></td>
+          <td style="width:32px;height:72px;background:#8fafd7;"></td>
+          <td style="width:32px;height:72px;background:#af5f5f;"></td>
+          <td style="width:32px;height:72px;background:#ff8700;"></td>
+          <td style="width:32px;height:72px;background:#87875f;"></td>
+          <td style="width:32px;height:72px;background:#ffffaf;"></td>
         </tr>
-      </thead>
-      <tbody>
+      </table>
+    </div>
+
+    <div>
+      <h1>Apprentice</h1>
+    </div>
+
+    <div>
+      <p><a href="https://github.com/romainl/Apprentice" title="Apprentice on github.com">Apprentice</a> is a low-contrast colorscheme for Vim based on the awesome <a href="http://www.vim.org/scripts/script.php?script_id=3299" title="Sorcerer on vim.org">Sorcerer</a> by Jeet Sukumaran.</p>
+
+      <p>It is essentially a streamlined version of the original, with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256colors-ready terminal emulators and GUI Vim.</p>
+
+      <p>Some JavaScript, in MacVim:</p>
+
+      <p class="img">
+        <img src="images/0MacVim.png" width="720" height="710" alt="MacVim" />
+      </p>
+
+      <p>The same JavaScript, in iTerm, with <code>TERM=xterm-256color</code>:</p>
+
+      <p class="img">
+        <img src="images/0256term.png" width="720" height="710" alt="iTerm, xterm-256color" />
+      </p>
+
+      <p>The same JavaScript, in iTerm, with <code>TERM=xterm</code>, using the default xterm color palette:</p>
+
+      <p class="img">
+        <img src="images/016termxterm.png" width="720" height="710" alt="iTerm, xterm" />
+      </p>
+    </div>
+
+    <div>
+      <h2>Preparing your environment.</h2>
+
+      <p>Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and in GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful environments.</p>
+
+      <h3>GVim/MacVim</h3>
+
+      <p>There is nothing to do for GVim/MacVim as GUI Vim supports millions of colors by default.</p>
+
+      <h3>256color-ready Terminal emulators</h3>
+
+      <p>Most terminal emulators in use nowadays <em>can</em> display 256 colors but most of them use a default <code>TERM</code> that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood by setting the correct <code>TERM</code> environment variable.</p>
+
+      <p>The “ideal” <code>TERM</code> usually includes the string <code>256color</code> like <code>xterm-256color</code>. The actual value is highly dependent on your terminal emulator and/or your terminal multiplexer, though, so you will have to refer to their manual.</p>
+
+      <h3>Working with a 8/16 colors</h3>
+
+      <p>
+        As an alternative to changing your default <code>TERM</code> to <code>xterm-256color</code> or similar, you can keep its default value, (usually something like <code>xterm</code> or <code>screen</code>) and set your terminal emulator to use the Apprentice colorscheme instead of its default colors.
+      </p>
+
+      <p>
+        The table below contains a subset of Apprentice’s palette. You can use a color picker or copy/paste these values:
+      </p>
+
+      <table border="0" cellpadding="5" cellspacing="0" width="100%" id="palette">
         <tr>
-          <td>Mac OS X</td>
-          <td>iTerm2.app</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
+          <th width="1">Intensity</th>
+          <th>Normal</th>
+          <th width="1">Intensity</th>
+          <th>Bright</th>
         </tr>
-        <tr>
-          <td>Mac OS X</td>
-          <td>Terminal.app</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
-        </tr>
-        <tr>
-          <td>X11</td>
-          <td>xterm</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
-        </tr>
-        <tr>
-          <td>X11</td>
-          <td>URxvt</td>
-          <td><code>rxvt-unicode</code></td>
-          <td><code>rxvt-unicode-256color</code></td>
-        </tr>
-        <tr>
-          <td>X11/Gnome</td>
-          <td>Gnome terminal</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
-        </tr>
-        <tr>
-          <td>X11/Gnome</td>
-          <td>Terminator</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
-        </tr>
-        <tr>
-          <td>X11/KDE</td>
-          <td>Konsole</td>
-          <td><code>xterm</code></td>
-          <td><code>xterm-256color</code></td>
-        </tr>
-      </tbody>
-    </table>
-    <p>Please refer to your terminal emulator’s manual for how to set it up properly.</p>
+        <tr><td><code>0</code></td><td bgcolor="#1C1C1C"><code>#1C1C1C</code></td><td><code>8</code><td bgcolor="#444444"><code>#444444</code></td></tr>
+        <tr><td><code>1</code></td><td bgcolor="#AF5F5F"><code>#AF5F5F</code></td><td><code>9</code><td bgcolor="#FF8700"><code>#FF8700</code></td></tr>
+        <tr><td><code>2</code></td><td bgcolor="#5F875F"><code>#5F875F</code></td><td><code>10</code><td bgcolor="#87AF87"><code>#87AF87</code></td></tr>
+        <tr><td><code>3</code></td><td bgcolor="#87875F"><code>#87875F</code></td><td><code>11</code><td bgcolor="#FFFFAF"><code>#FFFFAF</code></td></tr>
+        <tr><td><code>4</code></td><td bgcolor="#5F87AF"><code>#5F87AF</code></td><td><code>12</code><td bgcolor="#8FAFD7"><code>#8FAFD7</code></td></tr>
+        <tr><td><code>5</code></td><td bgcolor="#5F5F87"><code>#5F5F87</code></td><td><code>13</code><td bgcolor="#8787AF"><code>#8787AF</code></td></tr>
+        <tr><td><code>6</code></td><td bgcolor="#5F8787"><code>#5F8787</code></td><td><code>14</code><td bgcolor="#5FAFAF"><code>#5FAFAF</code></td></tr>
+        <tr><td><code>7</code></td><td bgcolor="#6C6C6C"><code>#6C6C6C</code></td><td><code>15</code><td bgcolor="#FFFFFF"><code>#FFFFFF</code></td></tr>
+        <tr><td><code>Foreground&nbsp;color</code></td><td bgcolor="#BCBCBC"><code>#BCBCBC</code></td><td><code>Background&nbsp;color</code></td><td bgcolor="#262626"><code>#262626</code></td></tr>
+      </table>
 
-    <p>NB: I’ve started <a href="https://github.com/romainl/Apprentice/wiki/256-colors-and-you.">a wiki page</a> listing the procedures for the terminal emlators above.</p>
+      <p>The same JavaScript, in iTerm, with <code>TERM=xterm</code>, using the color palette above:</p>
 
-    <p>For best results, it’s recommended to adjust your background color to the one used in the GUI/256color version of Apprentice:</p>
+      <p class="img">
+        <img src="images/016termapprentice.png" width="720" height="710" alt="iTerm, xterm, Apprentice colors" />
+      </p>
 
-    <ul>
-      <li>xterm color: <code>235</code>
-      </li>
-      <li>hexadecimal color: <code>#262626</code>
-      </li>
-    </ul>
+      <h3>All terminal emulators</h3>
 
-    <h3>Terminal multiplexers</h3>
+      <p>For best results, it is recommended to adjust your background color to the one used in the GUI/256color version of Apprentice:</p>
 
-    <p>Screen and tmux don’t respect your terminal emulator’s settings and set your <code>TERM</code> to their default value, <code>screen</code>. For better color support, the recommended <code>TERM</code> for both multiplexers is <code>screen-256color</code>.</p>
+      <ul>
+        <li>xterm color: <code>235</code>
+        </li>
+        <li>hexadecimal color: <code>#262626</code>
+        </li>
+      </ul>
+    </div>
 
-    <h4>tmux</h4>
+    <div>
+      <h2>Installing Apprentice.</h2>
 
-    <p>Put this line in <code>~/.tmux.conf</code>:</p>
+      <p>The canonical location is:</p>
 
-    <pre><code>set -g default-terminal "screen-256color"</code></pre>
+      <pre><code>~/.vim/colors/apprentice.vim</code></pre>
 
-    <h4>screen</h4>
+      <p>but it could be:</p>
 
-    <p>Put this line in <code>~/.screenrc</code>:</p>
+      <pre><code>~/.vim/bundle/apprentice/colors/apprentice.vim</code></pre>
 
-    <pre><code>term "screen-256color"</code></pre>
+      <p>or whatever works for you.</p>
+    </div>
 
-    <h3>Working with a 8 colors terminal</h3>
+    <div>
+      <h2>Enabling Apprentice.</h2>
 
-    <p>
-      As an alternative to <code>xterm-256color</code>, you can also leave your <code>TERM</code> at its default value, (usually <code>xterm</code> or <code>screen</code>, as we saw earlier) and set your terminal emulator to use the Apprentice colorscheme instead of its default colors.
-    </p>
+      <p>To test Apprentice, just type this command from <em>normal</em> mode and hit <code>Enter</code>:</p>
 
-    <p>The same JavaScript as above, in iTerm, with <code>TERM=xterm</code>, using the color palette below:</p>
+      <pre><code>:colorscheme apprentice</code></pre>
 
-    <p>
-      <img src="images/016termapprentice.png" width="720" height="710" alt="iTerm, xterm, Apprentice colors" />
-    </p>
+      <p>If you like what you see and want to make Apprentice your default colorscheme, add this line to your <code>~/.vimrc</code>:</p>
 
-    <p>
-      Use a color picker or copy/paste these values:
-    </p>
-
-    <table border="0" cellpadding="5" cellspacing="0" width="100%" id="palette">
-      <tr>
-        <th width="1">Intensity</th>
-        <th width="1">Name</th>
-        <th>Normal</th>
-        <th>Bright</th>
-      </tr>
-      <tr><td><code>0</code></td><td><code>Black</code></td><td bgcolor="#1C1C1C"><code>#1C1C1C</code></td><td bgcolor="#444444"><code>#444444</code></td></tr>
-      <tr><td><code>1</code></td><td><code>Red</code></td><td bgcolor="#AF5F5F"><code>#AF5F5F</code></td><td bgcolor="#FF8700"><code>#FF8700</code></td></tr>
-      <tr><td><code>2</code></td><td><code>Green</code></td><td bgcolor="#5F875F"><code>#5F875F</code></td><td bgcolor="#87AF87"><code>#87AF87</code></td></tr>
-      <tr><td><code>3</code></td><td><code>Yellow</code></td><td bgcolor="#87875F"><code>#87875F</code></td><td bgcolor="#FFFFAF"><code>#FFFFAF</code></td></tr>
-      <tr><td><code>4</code></td><td><code>Blue</code></td><td bgcolor="#5F87AF"><code>#5F87AF</code></td><td bgcolor="#8FAFD7"><code>#8FAFD7</code></td></tr>
-      <tr><td><code>5</code></td><td><code>Magenta</code></td><td bgcolor="#5F5F87"><code>#5F5F87</code></td><td bgcolor="#8787AF"><code>#8787AF</code></td></tr>
-      <tr><td><code>6</code></td><td><code>Cyan</code></td><td bgcolor="#5F8787"><code>#5F8787</code></td><td bgcolor="#5FAFAF"><code>#5FAFAF</code></td></tr>
-      <tr><td><code>7</code></td><td><code>White</code></td><td bgcolor="#6C6C6C"><code>#6C6C6C</code></td><td bgcolor="#FFFFFF"><code>#FFFFFF</code></td></tr>
-      <tr><td colspan="2"><code>Foreground&nbsp;color</code></td><td colspan="2" bgcolor="#BCBCBC"><code>#BCBCBC</code></td></tr>
-      <tr><td colspan="2"><code>Background&nbsp;color</code></td><td colspan="2" bgcolor="#262626"><code>#262626</code></td></tr>
-    </table>
-
-    <table border="0" cellpadding="5" cellspacing="3" width="100%">
-    </table>
-
-    <h2>Installing Apprentice.</h2>
-
-    <p>The canonical location is:</p>
-
-    <pre><code>~/.vim/colors/apprentice.vim</code></pre>
-
-    <p>but it could be:</p>
-
-    <pre><code>~/.vim/bundle/apprentice/colors/apprentice.vim</code></pre>
-
-    <p>or whatever works for you.</p>
-
-    <h2>Enabling Apprentice.</h2>
-
-    <p>To test Apprentice, just type this command from <em>normal</em> mode and hit <code>Enter</code>:</p>
-
-    <pre><code>:colorscheme apprentice</code></pre>
-
-    <p>If you like what you see and want to make Apprentice your default colorscheme, add this line to your <code>~/.vimrc</code>:</p>
-
-    <pre><code>colorscheme apprentice</code></pre>
+      <pre><code>colorscheme apprentice</code></pre>
+    </div>
 
     <hr>
     <p id="closing">If light colorschemes are more your thing, <a href="https://github.com/romainl/Disciple" title="Disciple on github.com">Disciple</a> is the negative version of Apprentice.</p>
 
-    <table cellpadding="0" cellspacing="0" border="0" width="720">
-      <tr>
-        <td style="width:32px;height:72px;background:#1c1c1c;"></td>
-        <td style="width:32px;height:72px;background:#262626;"></td>
-        <td style="width:32px;height:72px;background:#303030;"></td>
-        <td style="width:32px;height:72px;background:#444444;"></td>
-        <td style="width:32px;height:72px;background:#585858;"></td>
-        <td style="width:32px;height:72px;background:#6c6c6c;"></td>
-        <td style="width:32px;height:72px;background:#bcbcbc;"></td>
-        <td style="width:32px;height:72px;background:#ffffff;"></td>
-        <td style="width:32px;height:72px;background:#5f5f87;"></td>
-        <td style="width:32px;height:72px;background:#8787af;"></td>
-        <td style="width:32px;height:72px;background:#5f875f;"></td>
-        <td style="width:32px;height:72px;background:#87af87;"></td>
-        <td style="width:32px;height:72px;background:#5f8787;"></td>
-        <td style="width:32px;height:72px;background:#5fafaf;"></td>
-        <td style="width:32px;height:72px;background:#5f87af;"></td>
-        <td style="width:32px;height:72px;background:#8fafd7;"></td>
-        <td style="width:32px;height:72px;background:#af5f5f;"></td>
-        <td style="width:32px;height:72px;background:#ff8700;"></td>
-        <td style="width:32px;height:72px;background:#87875f;"></td>
-        <td style="width:32px;height:72px;background:#ffffaf;"></td>
-      </tr>
-    </table>
+    <div class="last">
+      <table cellpadding="0" cellspacing="0" border="0" width="720">
+        <tr>
+          <td style="width:32px;height:72px;background:#1c1c1c;"></td>
+          <td style="width:32px;height:72px;background:#262626;"></td>
+          <td style="width:32px;height:72px;background:#303030;"></td>
+          <td style="width:32px;height:72px;background:#444444;"></td>
+          <td style="width:32px;height:72px;background:#585858;"></td>
+          <td style="width:32px;height:72px;background:#6c6c6c;"></td>
+          <td style="width:32px;height:72px;background:#bcbcbc;"></td>
+          <td style="width:32px;height:72px;background:#ffffff;"></td>
+          <td style="width:32px;height:72px;background:#5f5f87;"></td>
+          <td style="width:32px;height:72px;background:#8787af;"></td>
+          <td style="width:32px;height:72px;background:#5f875f;"></td>
+          <td style="width:32px;height:72px;background:#87af87;"></td>
+          <td style="width:32px;height:72px;background:#5f8787;"></td>
+          <td style="width:32px;height:72px;background:#5fafaf;"></td>
+          <td style="width:32px;height:72px;background:#5f87af;"></td>
+          <td style="width:32px;height:72px;background:#8fafd7;"></td>
+          <td style="width:32px;height:72px;background:#af5f5f;"></td>
+          <td style="width:32px;height:72px;background:#ff8700;"></td>
+          <td style="width:32px;height:72px;background:#87875f;"></td>
+          <td style="width:32px;height:72px;background:#ffffaf;"></td>
+        </tr>
+      </table>
+    </div>
   </body>
 
 </html>
