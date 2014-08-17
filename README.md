@@ -48,7 +48,7 @@ The table below contains a subset of Apprentice’s palette. You can use a color
 | 7                | `#6C6C6C` ![#6C6C6C](http://romainl.github.io/Apprentice/images/6c6c6c.png) | 15               | `#FFFFFF` ![#FFFFFF](http://romainl.github.io/Apprentice/images/ffffff.png) |
 | Foreground color | `#BCBCBC` ![#BCBCBC](http://romainl.github.io/Apprentice/images/bcbcbc.png) | Background color | `#262626` ![#262626](http://romainl.github.io/Apprentice/images/262626.png) |
 
-The same JavaScript as above, in iTerm, with `TERM=xterm`, using the color palette below:
+The same JavaScript file as above, in iTerm, with `TERM=xterm`, using the color palette above:
 
 ![image](http://romainl.github.io/Apprentice/images/016termapprentice.png)
 
