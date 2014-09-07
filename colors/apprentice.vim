@@ -32,7 +32,7 @@ if &t_Co >= 256 || has('gui_running')
   hi Type             ctermbg=NONE ctermfg=103  guibg=NONE    guifg=#8787af cterm=NONE           gui=NONE
   hi Underlined       ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=underline      gui=underline
 
-  hi LineNr           ctermbg=234  ctermfg=240  guibg=#1c1c1c guifg=#585858 cterm=NONE           gui=NONE
+  hi LineNr           ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
   hi NonText          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
 
   hi Pmenu            ctermbg=238  ctermfg=250  guibg=#444444 guifg=#bcbcbc cterm=NONE           gui=NONE
@@ -64,8 +64,8 @@ if &t_Co >= 256 || has('gui_running')
   hi Visual           ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
   hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=bold,underline gui=bold,underline
 
-  hi FoldColumn       ctermbg=240  ctermfg=250  guibg=#585858 guifg=#bcbcbc cterm=NONE           gui=NONE
-  hi Folded           ctermbg=240  ctermfg=250  guibg=#585858 guifg=#bcbcbc cterm=NONE           gui=NONE
+  hi FoldColumn       ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
+  hi Folded           ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
 
   hi VertSplit        ctermbg=242  ctermfg=242  guibg=#6c6c6c guifg=#6c6c6c cterm=NONE           gui=NONE
   hi WildMenu         ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=bold           gui=bold
@@ -91,7 +91,7 @@ if &t_Co >= 256 || has('gui_running')
   hi SpellRare        ctermbg=NONE ctermfg=208  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#ff8700
 
   hi ColorColumn      ctermbg=131  ctermfg=NONE guibg=#af5f5f guifg=NONE    cterm=NONE           gui=NONE
-  hi SignColumn       ctermbg=238  ctermfg=235  guibg=#444444 guifg=#262626 cterm=NONE           gui=NONE
+  hi signColumn       ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
@@ -112,7 +112,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi Ignore           ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi Underlined       ctermbg=NONE        ctermfg=11          cterm=underline
 
-  hi LineNr           ctermbg=NONE        ctermfg=8           cterm=NONE
+  hi LineNr           ctermbg=0           ctermfg=7           cterm=NONE
   hi NonText          ctermbg=NONE        ctermfg=8           cterm=NONE
 
   hi Pmenu            ctermbg=7           ctermfg=0           cterm=NONE
@@ -143,8 +143,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi Visual           ctermbg=15          ctermfg=0           cterm=NONE
   hi VisualNOS        ctermbg=NONE        ctermfg=NONE        cterm=bold,underline
 
-  hi FoldColumn       ctermbg=8           ctermfg=15          cterm=NONE
-  hi Folded           ctermbg=8           ctermfg=15          cterm=NONE
+  hi FoldColumn       ctermbg=0           ctermfg=7           cterm=NONE
+  hi Folded           ctermbg=0           ctermfg=7           cterm=NONE
 
   hi VertSplit        ctermbg=8           ctermfg=8           cterm=NONE
   hi WildMenu         ctermbg=14          ctermfg=0           cterm=NONE
@@ -169,7 +169,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi SpellRare        ctermbg=NONE        ctermfg=5           cterm=undercurl
 
   hi ColorColumn      ctermbg=1           ctermfg=NONE        cterm=NONE
-  hi SignColumn       ctermbg=8           ctermfg=0           cterm=NONE
+  hi SignColumn       ctermbg=0           ctermfg=7           cterm=NONE
 
 endif
 
