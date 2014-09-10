@@ -84,6 +84,12 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
     colorscheme apprentice
 
+## What they say about Apprentice.
+
+* Vimgor, in #vim: *“A colorscheme as subtle, gentle and pleasant as its creator isn't.”*
+
+* Gfixler, in [r/vim](http://www.reddit.com/r/vim/comments/2fws13/syntax_on/cke2ued): *“I've been enjoying Apprentice. It's the only color scheme so far that I haven't felt like modifying in any way.”*
+
 ---
 
 If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is the negative version of Apprentice.
