@@ -118,13 +118,13 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
 
   hi Normal           ctermbg=NONE        ctermfg=15          cterm=NONE
-  hi Comment          ctermbg=NONE        ctermfg=7           cterm=NONE
+  hi Comment          ctermbg=NONE        ctermfg=8           cterm=NONE
   hi Constant         ctermbg=NONE        ctermfg=9           cterm=NONE
   hi Function         ctermbg=NONE        ctermfg=3           cterm=NONE
-  hi Identifier       ctermbg=NONE        ctermfg=12          cterm=NONE
+  hi Identifier       ctermbg=NONE        ctermfg=6           cterm=NONE
   hi PreProc          ctermbg=NONE        ctermfg=6           cterm=NONE
   hi Special          ctermbg=NONE        ctermfg=10          cterm=NONE
-  hi Statement        ctermbg=NONE        ctermfg=12          cterm=NONE
+  hi Statement        ctermbg=NONE        ctermfg=14          cterm=NONE
   hi String           ctermbg=NONE        ctermfg=2           cterm=NONE
   hi Todo             ctermbg=NONE        ctermfg=NONE        cterm=reverse
   hi Type             ctermbg=NONE        ctermfg=13          cterm=NONE
@@ -152,14 +152,14 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi TabLineSel       ctermbg=3           ctermfg=0           cterm=NONE
 
   hi Cursor           ctermbg=NONE        ctermfg=NONE        cterm=NONE
-  hi CursorLine       ctermbg=8           ctermfg=NONE        cterm=NONE
-  hi CursorLineNr     ctermbg=8           ctermfg=14          cterm=NONE
+  hi CursorLine       ctermbg=NONE        ctermfg=NONE        cterm=underline
+  hi CursorLineNr     ctermbg=0           ctermfg=14          cterm=NONE
 
   hi helpLeadBlank    ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi helpNormal       ctermbg=NONE        ctermfg=NONE        cterm=NONE
 
   hi StatusLine       ctermbg=3           ctermfg=0           cterm=NONE
-  hi StatusLineNC     ctermbg=0           ctermfg=3           cterm=NONE
+  hi StatusLineNC     ctermbg=8           ctermfg=0           cterm=NONE
 
   hi Visual           ctermbg=15          ctermfg=0           cterm=NONE
   hi VisualNOS        ctermbg=NONE        ctermfg=NONE        cterm=bold,underline
