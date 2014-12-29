@@ -1,6 +1,6 @@
 # ![Apprentice](http://romainl.github.io/Apprentice/images/logo.png)
 
-Apprentice is a low-contrast colorscheme for Vim based on the awesome [Sorcerer](http://www.vim.org/scripts/script.php?script_id=3299) by Jeet Sukumaran.
+Apprentice is a dark, low-contrast colorscheme for Vim based on the awesome [Sorcerer](http://www.vim.org/scripts/script.php?script_id=3299) by Jeet Sukumaran.
 
 It is essentially a streamlined version of the original, with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256colors-ready terminal emulators and GUI Vim.
 
@@ -30,9 +30,9 @@ Most terminal emulators in use nowadays *can* display 256 colors but most of the
 
 The “ideal” `TERM` usually includes the string `256color` like `xterm-256color`. The actual value is highly dependent on your terminal emulator and/or your terminal multiplexer, though, so you will have to refer to their manual.
 
-### Working with a 8/16 colors
+### Working with 8/16 colors
 
-As an alternative to changing your default `TERM` to `xterm-256color` or similar, you can keep its default value, (usually something like `xterm` or `screen`) and set your terminal emulator to use the Apprentice colorscheme instead of its default colors.
+As an alternative to changing your default `TERM` to `xterm-256color` or similar, you can keep its default value (usually something like `xterm` or `screen`) and set your terminal emulator to use [the Apprentice colorscheme](https://github.com/romainl/iterm2-colorschemes#readme) instead of its default colors.
 
 The table below contains a subset of Apprentice’s palette. You can use a color picker or copy/paste these values:
 
@@ -73,7 +73,6 @@ The same JavaScript file as above, in iTerm, with `TERM=xterm`, using the color 
 
 ![image](http://romainl.github.io/Apprentice/images/016termapprentice.png)
 
-
 ### All terminal emulators
 
 For best results, it is recommended to adjust your background color to the one used in the GUI/256color version of Apprentice:
@@ -83,7 +82,7 @@ For best results, it is recommended to adjust your background color to the one u
 
 ## Installing Apprentice.
 
-A colorscheme must be placed in a directory named `colors` that is somewhere in Vim’s `runtimepath`:
+Colorschemes must be placed in a directory named `colors` that is somewhere in Vim’s `runtimepath`:
 
 The canonical location is:
 
@@ -117,12 +116,4 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
 ---
 
-If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is the negative version of Apprentice.
-
----
-
-Note: all the screenshots were taken on my home machine, running Mac OS X 10.7.5, with the "light" anti-aliasing setting and the gorgeous [Fira Mono](http://www.carrois.com/fira-3-1/). Newer Mac OS X versions don't make that option available anymore so, if you think your text is too fat, you can try this command before restarting MacVim/iTerm/Terminal:
-
-    defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
-
-That setting works very well on my old and small display at home but it is definitely not optimal on my 27" iMac at work so… YMMV.
+If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is an experimental and mostly unmaintained negative version of Apprentice.
