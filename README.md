@@ -12,9 +12,9 @@ The same JavaScript, in iTerm, with `TERM=xterm-256color`:
 
 ![image](http://romainl.github.io/Apprentice/images/0256term.png)
 
-The same JavaScript, in iTerm, with `TERM=xterm`, using the default xterm color palette:
+The same JavaScript, in iTerm, with `TERM=xterm`, using the Tango color palette:
 
-![image](http://romainl.github.io/Apprentice/images/016termxterm.png)
+![image](http://romainl.github.io/Apprentice/images/08termtango.png)
 
 ## Preparing your environment.
 
@@ -71,7 +71,7 @@ Here is a sample `~/.Xresources` for you Linux/BSD users:
 
 The same JavaScript file as above, in iTerm, with `TERM=xterm`, using the color palette above:
 
-![image](http://romainl.github.io/Apprentice/images/016termapprentice.png)
+![image](http://romainl.github.io/Apprentice/images/08termapprentice.png)
 
 ### All terminal emulators
 
