@@ -84,17 +84,17 @@ if &t_Co >= 256 || has('gui_running')
   hi StatusLineNC     ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=italic
 
   hi Visual           ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
-  hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=bold,underline gui=bold,underline
+  hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
   hi FoldColumn       ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
   hi Folded           ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
 
   hi VertSplit        ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
-  hi WildMenu         ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=bold           gui=bold
+  hi WildMenu         ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
 
   hi Function         ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
   hi SpecialKey       ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
-  hi Title            ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=bold           gui=NONE
+  hi Title            ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=NONE           gui=NONE
 
   hi DiffAdd          ctermbg=108  ctermfg=235  guibg=#87af87 guifg=#262626 cterm=NONE           gui=NONE
   hi DiffChange       ctermbg=60   ctermfg=235  guibg=#5f5f87 guifg=#262626 cterm=NONE           gui=NONE
@@ -105,7 +105,7 @@ if &t_Co >= 256 || has('gui_running')
   hi Search           ctermbg=108  ctermfg=235  guibg=#87af87 guifg=#262626 cterm=NONE           gui=NONE
 
   hi Directory        ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=NONE           gui=NONE
-  hi MatchParen       ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=bold           gui=NONE
+  hi MatchParen       ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
 
   hi SpellBad         ctermbg=NONE ctermfg=131  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#af5f5f
   hi SpellCap         ctermbg=NONE ctermfg=73   guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#5fafaf
@@ -163,7 +163,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi StatusLineNC     ctermbg=8           ctermfg=0           cterm=NONE
 
   hi Visual           ctermbg=12          ctermfg=0           cterm=NONE
-  hi VisualNOS        ctermbg=NONE        ctermfg=NONE        cterm=bold,underline
+  hi VisualNOS        ctermbg=NONE        ctermfg=NONE        cterm=underline
 
   hi FoldColumn       ctermbg=0           ctermfg=8           cterm=NONE
   hi Folded           ctermbg=0           ctermfg=8           cterm=NONE
@@ -172,7 +172,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi WildMenu         ctermbg=12          ctermfg=0           cterm=NONE
 
   hi SpecialKey       ctermbg=NONE        ctermfg=8           cterm=NONE
-  hi Title            ctermbg=NONE        ctermfg=15          cterm=bold
+  hi Title            ctermbg=NONE        ctermfg=15          cterm=NONE
 
   hi DiffAdd          ctermbg=2           ctermfg=0           cterm=NONE
   hi DiffChange       ctermbg=6           ctermfg=0           cterm=NONE
