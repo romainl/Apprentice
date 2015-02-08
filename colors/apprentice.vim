@@ -1,6 +1,6 @@
 " 'apprentice.vim' -- Vim color scheme.
 " Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
-" Essentially a streamlining and conversion to X11 colors of
+" Essentially a streamlining and conversion to xterm colors of
 " 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
 
 " MADE-UP NAME    HEX        XTERM  ANSI
