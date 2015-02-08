@@ -118,6 +118,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
 
   hi Normal           ctermbg=NONE        ctermfg=15          cterm=NONE
+
+  set background=dark
+
   hi Comment          ctermbg=NONE        ctermfg=8           cterm=NONE
   hi Constant         ctermbg=NONE        ctermfg=9           cterm=NONE
   hi Function         ctermbg=NONE        ctermfg=11          cterm=NONE
