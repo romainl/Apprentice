@@ -1,0 +1,239 @@
+" 'apprentice.vim' -- Vim color scheme.
+" Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
+" Essentially a streamlining and conversion to xterm colors of
+" 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
+
+" NAME             HEX        XTERM  ANSI
+" =======================================================================================
+" <%= almost_black = [ 'almost_black' , '#1c1c1c' ,    '234' ,    '0'                ] %>
+" <%= darker_grey  = [ 'darker_grey ' , '#262626' ,    '235' ,    'background color' ] %>
+" <%= dark_grey    = [ 'dark_grey   ' , '#303030' ,    '236' ,    '8'                ] %>
+" <%= grey         = [ 'grey        ' , '#444444' ,    '238' ,    '8'                ] %>
+" <%= medium_grey  = [ 'medium_grey ' , '#585858' ,    '240' ,    '8'                ] %>
+" <%= light_grey   = [ 'light_grey  ' , '#6c6c6c' ,    '242' ,    '7'                ] %>
+" <%= lighter_grey = [ 'lighter_grey' , '#bcbcbc' ,    '250' ,    'foreground color' ] %>
+" <%= white        = [ 'white       ' , '#ffffff' ,    '231' ,    '15'               ] %>
+" <%= purple       = [ 'purple      ' , '#5f5f87' ,    '60 ' ,    '5'                ] %>
+" <%= light_purple = [ 'light_purple' , '#8787af' ,    '103' ,    '13'               ] %>
+" <%= green        = [ 'green       ' , '#5f875f' ,    '65 ' ,    '2'                ] %>
+" <%= light_green  = [ 'light_green ' , '#87af87' ,    '108' ,    '10'               ] %>
+" <%= aqua         = [ 'aqua        ' , '#5f8787' ,    '66 ' ,    '6'                ] %>
+" <%= light_aqua   = [ 'light_aqua  ' , '#5fafaf' ,    '73 ' ,    '14'               ] %>
+" <%= blue         = [ 'blue        ' , '#5f87af' ,    '67 ' ,    '4'                ] %>
+" <%= light_blue   = [ 'light_blue  ' , '#8fafd7' ,    '110' ,    '12'               ] %>
+" <%= red          = [ 'red         ' , '#af5f5f' ,    '131' ,    '1'                ] %>
+" <%= orange       = [ 'orange      ' , '#ff8700' ,    '208' ,    '9'                ] %>
+" <%= ocre         = [ 'ocre        ' , '#87875f' ,    '101' ,    '3'                ] %>
+" <%= yellow       = [ 'yellow      ' , '#ffffaf' ,    '229' ,    '11'               ] %>
+
+hi clear
+
+if exists('syntax_on')
+  syntax reset
+endif
+
+set background=dark
+
+let colors_name = 'apprentice'
+
+if &t_Co >= 256 || has('gui_running')
+ hi Normal        ctermbg=<%= darker_grey[2] %>   ctermfg=<%=  lighter_grey[2] %> guibg=<%= darker_grey[1] %>   guifg=<%= lighter_grey[1] %>  cterm=NONE       gui=NONE
+
+ set background=dark
+
+ hi Comment       ctermbg=NONE                    ctermfg=<%=  medium_grey[2] %>  guibg=NONE                    guifg=<%=  medium_grey[1] %>  cterm=NONE       gui=NONE
+ hi Constant      ctermbg=NONE                    ctermfg=<%=  orange[2] %>       guibg=NONE                    guifg=<%=  orange[1] %>       cterm=NONE       gui=NONE
+ hi Error         ctermbg=NONE                    ctermfg=<%=  red[2] %>          guibg=NONE                    guifg=<%=  red[1] %>          cterm=reverse    gui=reverse
+ hi Identifier    ctermbg=NONE                    ctermfg=<%=  blue[2] %>         guibg=NONE                    guifg=<%=  blue[1] %>         cterm=NONE       gui=NONE
+ hi Ignore        ctermbg=NONE                    ctermfg=NONE                    guibg=NONE                    guifg=NONE                    cterm=NONE       gui=NONE
+ hi PreProc       ctermbg=NONE                    ctermfg=<%=  aqua[2] %>         guibg=NONE                    guifg=<%=  aqua[1] %>         cterm=NONE       gui=NONE
+ hi Special       ctermbg=NONE                    ctermfg=<%=  green[2] %>        guibg=NONE                    guifg=<%=  green[1] %>        cterm=NONE       gui=NONE
+ hi Statement     ctermbg=NONE                    ctermfg=<%=  light_blue[2] %>   guibg=NONE                    guifg=<%=  light_blue[1] %>   cterm=NONE       gui=NONE
+ hi String        ctermbg=NONE                    ctermfg=<%=  light_green[2] %>  guibg=NONE                    guifg=<%=  light_green[1] %>  cterm=NONE       gui=NONE
+ hi Todo          ctermbg=NONE                    ctermfg=NONE                    guibg=NONE                    guifg=NONE                    cterm=reverse    gui=reverse
+ hi Type          ctermbg=NONE                    ctermfg=<%=  light_purple[2] %> guibg=NONE                    guifg=<%=  light_purple[1] %> cterm=NONE       gui=NONE
+ hi Underlined    ctermbg=NONE                    ctermfg=<%=  aqua[2] %>         guibg=NONE                    guifg=<%=  aqua[1] %>         cterm=underline  gui=underline
+
+ hi LineNr        ctermbg=<%=  almost_black[2] %> ctermfg=<%=  light_grey[2] %>   guibg=<%=  almost_black[1] %> guifg=<%=  light_grey[1] %>   cterm=NONE       gui=NONE
+ hi NonText       ctermbg=NONE                    ctermfg=<%=  medium_grey[2] %>  guibg=NONE                    guifg=<%=  medium_grey[1] %>  cterm=NONE       gui=NONE
+
+ hi Pmenu         ctermbg=<%=  grey[2] %>         ctermfg=<%=  lighter_grey[2] %> guibg=<%=  grey[1] %>         guifg=<%=  lighter_grey[1] %> cterm=NONE       gui=NONE
+ hi PmenuSbar     ctermbg=<%=  medium_grey[2] %>  ctermfg=NONE                    guibg=<%=  medium_grey[1] %>  guifg=NONE                    cterm=NONE       gui=NONE
+ hi PmenuSel      ctermbg=<%=  aqua[2] %>         ctermfg=<%=  darker_grey[2] %>  guibg=<%=  aqua[1] %>         guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi PmenuThumb    ctermbg=<%=  aqua[2] %>         ctermfg=<%=  aqua[2] %>         guibg=<%=  aqua[1] %>         guifg=<%=  aqua[1] %>         cterm=NONE       gui=NONE
+
+ hi ErrorMsg      ctermbg=<%=  red[2] %>          ctermfg=<%=  darker_grey[2] %>  guibg=<%=  red[1] %>          guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi ModeMsg       ctermbg=<%=  light_green[2] %>  ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_green[1] %>  guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi MoreMsg       ctermbg=NONE                    ctermfg=<%=  aqua[2] %>         guibg=NONE                    guifg=<%=  aqua[1] %>         cterm=NONE       gui=NONE
+ hi Question      ctermbg=NONE                    ctermfg=<%=  light_green[2] %>  guibg=NONE                    guifg=<%=  light_green[1] %>  cterm=NONE       gui=NONE
+ hi WarningMsg    ctermbg=NONE                    ctermfg=<%=  red[2] %>          guibg=NONE                    guifg=<%=  red[1] %>          cterm=NONE       gui=NONE
+
+ hi TabLine       ctermbg=<%=  grey[2] %>         ctermfg=<%=  ocre[2] %>         guibg=<%=  grey[1] %>         guifg=<%=  ocre[1] %>         cterm=NONE       gui=NONE
+ hi TabLineFill   ctermbg=<%=  grey[2] %>         ctermfg=<%=  grey[2] %>         guibg=<%=  grey[1] %>         guifg=<%=  grey[1] %>         cterm=NONE       gui=NONE
+ hi TabLineSel    ctermbg=<%=  ocre[2] %>         ctermfg=<%=  darker_grey[2] %>  guibg=<%=  ocre[1] %>         guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+
+ hi Cursor        ctermbg=<%=  light_grey[2] %>   ctermfg=NONE                    guibg=<%=  light_grey[1] %>   guifg=NONE                    cterm=NONE       gui=NONE
+ hi CursorColumn  ctermbg=<%=  dark_grey[2] %>    ctermfg=NONE                    guibg=<%=  dark_grey[1] %>    guifg=NONE                    cterm=NONE       gui=NONE
+ hi CursorLine    ctermbg=<%=  dark_grey[2] %>    ctermfg=NONE                    guibg=<%=  dark_grey[1] %>    guifg=NONE                    cterm=NONE       gui=NONE
+ hi CursorLineNr  ctermbg=<%=  dark_grey[2] %>    ctermfg=<%=  light_aqua[2] %>   guibg=<%=  dark_grey[1] %>    guifg=<%=  light_aqua[1] %>   cterm=NONE       gui=NONE
+
+ hi helpLeadBlank ctermbg=NONE                    ctermfg=NONE                    guibg=NONE                    guifg=NONE                    cterm=NONE       gui=NONE
+ hi helpNormal    ctermbg=NONE                    ctermfg=NONE                    guibg=NONE                    guifg=NONE                    cterm=NONE       gui=NONE
+
+ hi StatusLine    ctermbg=<%=  ocre[2] %>         ctermfg=<%=  darker_grey[2] %>  guibg=<%=  ocre[1] %>         guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi StatusLineNC  ctermbg=<%=  grey[2] %>         ctermfg=<%=  ocre[2] %>         guibg=<%=  grey[1] %>         guifg=<%=  ocre[1] %>         cterm=NONE       gui=italic
+
+ hi Visual        ctermbg=<%=  light_blue[2] %>   ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_blue[1] %>   guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi VisualNOS     ctermbg=NONE                    ctermfg=NONE                    guibg=NONE                    guifg=NONE                    cterm=underline  gui=underline
+
+ hi FoldColumn    ctermbg=<%=  almost_black[2] %> ctermfg=<%=  light_grey[2] %>   guibg=<%=  almost_black[1] %> guifg=<%=  light_grey[1] %>   cterm=NONE       gui=NONE
+ hi Folded        ctermbg=<%=  almost_black[2] %> ctermfg=<%=  light_grey[2] %>   guibg=<%=  almost_black[1] %> guifg=<%=  light_grey[1] %>   cterm=NONE       gui=NONE
+
+ hi VertSplit     ctermbg=<%=  grey[2] %>         ctermfg=<%=  grey[2] %>         guibg=<%=  grey[1] %>         guifg=<%=  grey[1] %>         cterm=NONE       gui=NONE
+ hi WildMenu      ctermbg=<%=  light_blue[2] %>   ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_blue[1] %>   guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+
+ hi Function      ctermbg=NONE                    ctermfg=<%=  yellow[2] %>       guibg=NONE                    guifg=<%=  yellow[1] %>       cterm=NONE       gui=NONE
+ hi SpecialKey    ctermbg=NONE                    ctermfg=<%=  medium_grey[2] %>  guibg=NONE                    guifg=<%=  medium_grey[1] %>  cterm=NONE       gui=NONE
+ hi Title         ctermbg=NONE                    ctermfg=<%=  white[2] %>        guibg=NONE                    guifg=<%=  white[1] %>        cterm=NONE       gui=NONE
+
+ hi DiffAdd       ctermbg=<%=  light_green[2] %>  ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_green[1] %>  guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi DiffChange    ctermbg=<%=  purple[2] %>       ctermfg=<%=  darker_grey[2] %>  guibg=<%=  purple[1] %>       guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi DiffDelete    ctermbg=<%=  red[2] %>          ctermfg=<%=  darker_grey[2] %>  guibg=<%=  red[1] %>          guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi DiffText      ctermbg=<%=  light_purple[2] %> ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_purple[1] %> guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+
+ hi IncSearch     ctermbg=<%=  red[2] %>          ctermfg=<%=  darker_grey[2] %>  guibg=<%=  red[1] %>          guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+ hi Search        ctermbg=<%=  light_green[2] %>  ctermfg=<%=  darker_grey[2] %>  guibg=<%=  light_green[1] %>  guifg=<%=  darker_grey[1] %>  cterm=NONE       gui=NONE
+
+ hi Directory     ctermbg=NONE                    ctermfg=<%=  light_aqua[2] %>   guibg=NONE                    guifg=<%=  light_aqua[1] %>   cterm=NONE       gui=NONE
+ hi MatchParen    ctermbg=NONE                    ctermfg=<%=  yellow[2] %>       guibg=NONE                    guifg=<%=  yellow[1] %>       cterm=NONE       gui=NONE
+
+ hi SpellBad      ctermbg=NONE                    ctermfg=<%=  red[2] %>          guibg=NONE                    guifg=NONE                    cterm=undercurl  gui=undercurl  guisp=<%= red[1] %>
+ hi SpellCap      ctermbg=NONE                    ctermfg=<%=  light_aqua[2] %>   guibg=NONE                    guifg=NONE                    cterm=undercurl  gui=undercurl  guisp=<%= light_aqua[1] %>
+ hi SpellLocal    ctermbg=NONE                    ctermfg=<%=  green[2] %>        guibg=NONE                    guifg=NONE                    cterm=undercurl  gui=undercurl  guisp=<%= green[1] %>
+ hi SpellRare     ctermbg=NONE                    ctermfg=<%=  orange[2] %>       guibg=NONE                    guifg=NONE                    cterm=undercurl  gui=undercurl  guisp=<%= orange[1] %>
+
+ hi ColorColumn   ctermbg=<%=  red[2] %>          ctermfg=NONE                    guibg=<%=  red[1] %>          guifg=NONE                    cterm=NONE       gui=NONE
+ hi signColumn    ctermbg=<%=  almost_black[2] %> ctermfg=<%=  light_grey[2] %>   guibg=<%=  almost_black[1] %> guifg=<%=  light_grey[1] %>   cterm=NONE       gui=NONE
+
+elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
+  set t_Co=16
+
+  hi Normal        ctermbg=NONE                    ctermfg=<%= white[3] %>         cterm=NONE
+
+  set background=dark
+
+  hi Comment       ctermbg=NONE                    ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+  hi Constant      ctermbg=NONE                    ctermfg=<%=  orange[3] %>       cterm=NONE
+  hi Function      ctermbg=NONE                    ctermfg=<%=  yellow[3] %>       cterm=NONE
+  hi Identifier    ctermbg=NONE                    ctermfg=<%=  blue[3] %>         cterm=NONE
+  hi PreProc       ctermbg=NONE                    ctermfg=<%=  aqua[3] %>         cterm=NONE
+  hi Special       ctermbg=NONE                    ctermfg=<%=  green[3] %>        cterm=NONE
+  hi Statement     ctermbg=NONE                    ctermfg=<%=  light_blue[3] %>   cterm=NONE
+  hi String        ctermbg=NONE                    ctermfg=<%=  light_green[3] %>  cterm=NONE
+  hi Todo          ctermbg=NONE                    ctermfg=NONE                    cterm=reverse
+  hi Type          ctermbg=NONE                    ctermfg=<%=  light_purple[3] %> cterm=NONE
+
+  hi Error         ctermbg=NONE                    ctermfg=<%=  red[3] %>          cterm=reverse
+  hi Ignore        ctermbg=NONE                    ctermfg=NONE                    cterm=NONE
+  hi Underlined    ctermbg=NONE                    ctermfg=<%=  aqua[3] %>         cterm=underline
+
+  hi LineNr        ctermbg=<%=  almost_black[3] %> ctermfg=<%=  light_grey[3] %>   cterm=NONE
+  hi NonText       ctermbg=NONE                    ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+
+  hi Pmenu         ctermbg=<%=  dark_grey[3] %>    ctermfg=<%=  white[3] %>        cterm=NONE
+  hi PmenuSbar     ctermbg=<%=  light_grey[3] %>   ctermfg=NONE                    cterm=NONE
+  hi PmenuSel      ctermbg=<%=  aqua[3] %>         ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi PmenuThumb    ctermbg=<%=  aqua[3] %>         ctermfg=NONE                    cterm=NONE
+
+  hi ErrorMsg      ctermbg=<%=  red[3] %>          ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi ModeMsg       ctermbg=<%=  green[3] %>        ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi MoreMsg       ctermbg=NONE                    ctermfg=<%=  aqua[3] %>         cterm=NONE
+  hi Question      ctermbg=NONE                    ctermfg=<%=  light_green[3] %>  cterm=NONE
+  hi WarningMsg    ctermbg=NONE                    ctermfg=<%=  red[3] %>          cterm=NONE
+
+  hi TabLine       ctermbg=<%=  dark_grey[3] %>    ctermfg=<%=  ocre[3] %>         cterm=NONE
+  hi TabLineFill   ctermbg=<%=  dark_grey[3] %>    ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi TabLineSel    ctermbg=<%=  ocre[3] %>         ctermfg=<%=  almost_black[3] %> cterm=NONE
+
+  hi Cursor        ctermbg=NONE                    ctermfg=NONE                    cterm=NONE
+  hi CursorColumn  ctermbg=<%=  dark_grey[3] %>    ctermfg=NONE                    cterm=NONE
+  hi CursorLine    ctermbg=NONE                    ctermfg=NONE                    cterm=underline
+  hi CursorLineNr  ctermbg=<%=  almost_black[3] %> ctermfg=<%=  light_aqua[3] %>   cterm=NONE
+
+  hi helpLeadBlank ctermbg=NONE                    ctermfg=NONE                    cterm=NONE
+  hi helpNormal    ctermbg=NONE                    ctermfg=NONE                    cterm=NONE
+
+  hi StatusLine    ctermbg=<%=  ocre[3] %>         ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi StatusLineNC  ctermbg=<%=  dark_grey[3] %>    ctermfg=<%=  almost_black[3] %> cterm=NONE
+
+  hi Visual        ctermbg=<%=  light_blue[3] %>   ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi VisualNOS     ctermbg=NONE                    ctermfg=NONE                    cterm=underline
+
+  hi FoldColumn    ctermbg=<%=  almost_black[3] %> ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+  hi Folded        ctermbg=<%=  almost_black[3] %> ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+
+  hi VertSplit     ctermbg=<%=  dark_grey[3] %>    ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+  hi WildMenu      ctermbg=<%=  light_blue[3] %>   ctermfg=<%=  almost_black[3] %> cterm=NONE
+
+  hi SpecialKey    ctermbg=NONE                    ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+  hi Title         ctermbg=NONE                    ctermfg=<%=  white[3] %>        cterm=NONE
+
+  hi DiffAdd       ctermbg=<%=  green[3] %>        ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi DiffChange    ctermbg=<%=  aqua[3] %>         ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi DiffDelete    ctermbg=<%=  red[3] %>          ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi DiffText      ctermbg=<%=  yellow[3] %>       ctermfg=<%=  almost_black[3] %> cterm=NONE
+
+  hi IncSearch     ctermbg=<%=  red[3] %>          ctermfg=<%=  almost_black[3] %> cterm=NONE
+  hi Search        ctermbg=<%=  green[3] %>        ctermfg=<%=  almost_black[3] %> cterm=NONE
+
+  hi Directory     ctermbg=NONE                    ctermfg=<%=  light_aqua[3] %>   cterm=NONE
+
+  hi SpellBad      ctermbg=NONE                    ctermfg=<%=  red[3] %>          cterm=undercurl
+  hi SpellCap      ctermbg=NONE                    ctermfg=<%=  ocre[3] %>         cterm=undercurl
+  hi SpellLocal    ctermbg=NONE                    ctermfg=<%=  green[3] %>        cterm=undercurl
+  hi SpellRare     ctermbg=NONE                    ctermfg=<%=  purple[3] %>       cterm=undercurl
+
+  hi ColorColumn   ctermbg=<%=  red[3] %>          ctermfg=NONE                    cterm=NONE
+  hi SignColumn    ctermbg=<%=  almost_black[3] %> ctermfg=<%=  dark_grey[3] %>    cterm=NONE
+endif
+
+hi link Boolean            Constant
+hi link Character          Constant
+hi link Conceal            Normal
+hi link Conditional        Statement
+hi link Debug              Special
+hi link Define             PreProc
+hi link Delimiter          Special
+hi link Exception          Statement
+hi link Float              Number
+hi link HelpCommand        Statement
+hi link HelpExample        Statement
+hi link Include            PreProc
+hi link Keyword            Statement
+hi link Label              Statement
+hi link Macro              PreProc
+hi link Number             Constant
+hi link Operator           Statement
+hi link PreCondit          PreProc
+hi link Repeat             Statement
+hi link SpecialChar        Special
+hi link SpecialComment     Special
+hi link StorageClass       Type
+hi link Structure          Type
+hi link Tag                Special
+hi link Typedef            Type
+
+hi link htmlEndTag         htmlTagName
+hi link htmlLink           Function
+hi link htmlSpecialTagName htmlTagName
+hi link htmlTag            htmlTagName
+
+hi link diffBDiffer        WarningMsg
+hi link diffCommon         WarningMsg
+hi link diffDiffer         WarningMsg
+hi link diffIdentical      WarningMsg
+hi link diffIsA            WarningMsg
+hi link diffNoEOL          WarningMsg
+hi link diffOnly           WarningMsg
+hi link diffRemoved        WarningMsg
+hi link diffAdded          String

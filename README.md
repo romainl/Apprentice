@@ -80,6 +80,16 @@ For best results, it is recommended to adjust your background color to the one u
 * xterm color: `235`
 * hexadecimal color: `#262626`
 
+## Building Apprentice.
+
+NOTE: This section is only important to developers who want to modify
+Apprentice. Normal users can follow the instructions for Installing Apprentice
+below.
+
+Apprentice generates its colorscheme from an ERB template:
+
+    erb colors/apprentice.erb > colors/apprentice.vim
+
 ## Installing Apprentice.
 
 Colorschemes must be placed in a directory named `colors` that is somewhere in Vim’s `runtimepath`:
