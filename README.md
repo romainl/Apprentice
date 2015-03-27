@@ -120,4 +120,4 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
 If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is an experimental and mostly unmaintained negative version of Apprentice.
 
-[Lightning](https://github.com/wimstefan/Lightning) is a light fork of Apprentice worth considering.
+On the same note, [Lightning](https://github.com/wimstefan/Lightning) is a light fork of Apprentice worth considering.
