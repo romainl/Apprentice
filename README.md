@@ -112,10 +112,12 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
 * dddbbb, in [r/vim](http://www.reddit.com/r/vim/comments/2fws13/syntax_on/ckekyg1): *“Haha, you've been quoted in the readme. romainl is still with us in spirit! Apprentice looks nice, and it's great that seems simple to get it working in terminal (no t_co hacks).”*
 
+* Gfixler again, in [r/vim](http://www.reddit.com/r/vim/comments/30dph9/solarizedlike_colorschemes/cprnfxm): *“My favorite color scheme by far is Apprentice, but again, it's completely subjective. Pick something that makes you feel good while using it. I particularly love Apprentice's selection blue color. I select things all the time just to experience it. So pretty.”*
+
 ;-)
 
 ---
 
 If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is an experimental and mostly unmaintained negative version of Apprentice.
 
-[Lightning](https://github.com/wimstefan/Lightning) is a light fork worth considering.
+[Lightning](https://github.com/wimstefan/Lightning) is a light fork of Apprentice worth considering.
