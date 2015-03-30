@@ -105,7 +105,7 @@ if &t_Co >= 256 || has('gui_running')
   hi Search           ctermbg=108  ctermfg=235  guibg=#87af87 guifg=#262626 cterm=NONE           gui=NONE
 
   hi Directory        ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=NONE           gui=NONE
-  hi MatchParen       ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
+  hi MatchParen       ctermbg=bg   ctermfg=fg   guibg=bg      guifg=fg      cterm=reverse        gui=reverse
 
   hi SpellBad         ctermbg=NONE ctermfg=131  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#af5f5f
   hi SpellCap         ctermbg=NONE ctermfg=73   guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#5fafaf
@@ -186,6 +186,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi Search           ctermbg=2           ctermfg=0           cterm=NONE
 
   hi Directory        ctermbg=NONE        ctermfg=14          cterm=NONE
+  hi MatchParen       ctermbg=bg          ctermfg=fg          cterm=reverse
+
 
   hi SpellBad         ctermbg=NONE        ctermfg=1           cterm=undercurl
   hi SpellCap         ctermbg=NONE        ctermfg=3           cterm=undercurl
