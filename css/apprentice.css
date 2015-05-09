@@ -35,9 +35,11 @@ pre, code {
 }
 pre {
   padding: 7px;
+  border-radius: 7px;
 }
 code {
   padding: 0 3px;
+  border-radius: 3px;
 }
 p, hr {
   margin-left: 0;
@@ -57,6 +59,9 @@ hr {
 p, pre, hr, table {
   margin: 0 0 2em 0;
 }
+p.before-img {
+  margin: 0;
+}
 h1, h2, h3, h4 {
   margin: 0 0 7px 0;
 }
@@ -71,4 +76,7 @@ a:active {
 }
 div.last, div.last table {
   margin: 0;
+}
+ul li {
+  margin: 0 0 1em 0;
 }
