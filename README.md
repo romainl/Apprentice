@@ -4,21 +4,21 @@ Apprentice is a dark, low-contrast colorscheme for Vim based on the awesome [Sor
 
 It is essentially a streamlined version of the original, with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256colors-ready terminal emulators and GUI Vim.
 
-Some JavaScript, in MacVim:
+Some code in MacVim:
 
-![image](http://romainl.github.io/Apprentice/images/0MacVim.png)
+![image](http://romainl.github.io/Apprentice/images/0macvim.png)
 
-The same JavaScript, in iTerm, with `TERM=xterm-256color`:
+Some code in iTerm, with `TERM=xterm-256color`:
 
 ![image](http://romainl.github.io/Apprentice/images/0256term.png)
 
-The same JavaScript, in iTerm, with `TERM=xterm`, using the Tango color palette:
+Some code in iTerm, with `TERM=xterm`, using the Tango color palette:
 
 ![image](http://romainl.github.io/Apprentice/images/08termtango.png)
 
 ## Preparing your environment.
 
-Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and in GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more powerful environments.
+Apprentice is designed first and foremost to look “good” in terminal emulators supporting 256 colors and in GUI Vim (GVim/MacVim). It supports lesser terminal emulators in the sense that it doesn’t break but it will definitely look “better” in more capable environments.
 
 ### GVim/MacVim
 
@@ -28,7 +28,7 @@ There is nothing to do for GVim/MacVim as GUI Vim supports millions of colors by
 
 Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood by setting the correct `TERM` environment variable.
 
-The “ideal” `TERM` usually includes the string `256color` like `xterm-256color`. The actual value is highly dependent on your terminal emulator and/or your terminal multiplexer, though, so you will have to refer to their manual.
+The “ideal” `TERM` usually includes the string `256color`, like `xterm-256color`. The actual value is highly dependent on your terminal emulator and/or your terminal multiplexer, though, so you will have to refer to their manual.
 
 ### Working with 8/16 colors
 
@@ -69,7 +69,7 @@ Here is a sample `~/.Xresources` for you Linux/BSD users:
     *.color7:     #6C6C6C
     *.color15:    #FFFFFF
 
-The same JavaScript file as above, in iTerm, with `TERM=xterm`, using the color palette above:
+Some code in iTerm, with `TERM=xterm`, using the color palette above:
 
 ![image](http://romainl.github.io/Apprentice/images/08termapprentice.png)
 
