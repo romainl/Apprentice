@@ -3,28 +3,28 @@
 " Essentially a streamlining and conversion to xterm colors of
 " 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
 
-" MADE-UP NAME    HEX        XTERM  ANSI
-" ==================================================
-" almost black    #1c1c1c    234    0
-" darker grey     #262626    235    background color
-" dark grey       #303030    236    8
-" grey            #444444    238    8
-" medium grey     #585858    240    8
-" light grey      #6c6c6c    242    7
-" lighter grey    #bcbcbc    250    foreground color
-" white           #ffffff    231    15
-" purple          #5f5f87    60     5
-" light purple    #8787af    103    13
-" green           #5f875f    65     2
-" light green     #87af87    108    10
-" aqua            #5f8787    66     6
-" light aqua      #5fafaf    73     14
-" blue            #5f87af    67     4
-" light blue      #8fafd7    110    12
-" red             #af5f5f    131    1
-" orange          #ff8700    208    9
-" ocre            #87875f    101    3
-" yellow          #ffffaf    229    11
+" MADE-UP NAME    HEX        RGB                   XTERM  ANSI
+" ========================================================================
+" almost black    #1c1c1c    rgb(28, 28, 28)       234    0
+" darker grey     #262626    rgb(38, 38, 38)       235    background color
+" dark grey       #303030    rgb(48, 48, 48)       236    8
+" grey            #444444    rgb(68, 68, 68)       238    8
+" medium grey     #585858    rgb(88, 88, 88)       240    8
+" light grey      #6c6c6c    rgb(108, 108, 108)    242    7
+" lighter grey    #bcbcbc    rgb(188, 188, 188)    250    foreground color
+" white           #ffffff    rgb(255, 255, 255)    231    15
+" purple          #5f5f87    rgb(95, 95, 135)      60     5
+" light purple    #8787af    rgb(135, 135, 175)    103    13
+" green           #5f875f    rgb(95, 135, 95)      65     2
+" light green     #87af87    rgb(135, 175, 135)    108    10
+" aqua            #5f8787    rgb(95, 135, 135)     66     6
+" light aqua      #5fafaf    rgb(95, 175, 175)     73     14
+" blue            #5f87af    rgb(95, 135, 175)     67     4
+" light blue      #8fafd7    rgb(143, 175, 215)    110    12
+" red             #af5f5f    rgb(175, 95, 95)      131    1
+" orange          #ff8700    rgb(255, 135, 0)      208    9
+" ocre            #87875f    rgb(135, 135, 95)     101    3
+" yellow          #ffffaf    rgb(255, 255, 175)    229    11
 
 hi clear
 
@@ -230,6 +230,8 @@ hi link htmlTag            htmlTagName
 hi link xmlTag             Statement
 hi link xmlTagName         Statement
 hi link xmlEndTag          Statement
+
+hi link markdownItalic     Preproc
 
 hi link diffBDiffer        WarningMsg
 hi link diffCommon         WarningMsg
