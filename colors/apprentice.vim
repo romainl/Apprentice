@@ -1,7 +1,7 @@
 " 'apprentice.vim' -- Vim color scheme.
-" Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
-" Essentially a streamlining and conversion to xterm colors of
-" 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
+" Author:       Romain Lafourcade (romainlafourcade@gmail.com)
+" Description:  Essentially a streamlining and conversion to xterm colors of
+"               'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
 
 " MADE-UP NAME    HEX        RGB                   XTERM  ANSI
 " ========================================================================
@@ -28,19 +28,13 @@
 
 hi clear
 
-if exists('syntax_on')
+if exists("syntax_on")
   syntax reset
 endif
 
-if has('win32') || has('win16')
-  let s:os = 'Windows'
-else
-  let s:os = substitute(system('uname'), '\n', '', '')
-endif
+let colors_name = "apprentice"
 
-let colors_name = 'apprentice'
-
-if &t_Co >= 256 || has('gui_running')
+if ($TERM =~ '256' && &t_Co >= 256) || has("gui_running")
   hi Normal           ctermbg=235  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
 
   set background=dark
@@ -118,131 +112,87 @@ if &t_Co >= 256 || has('gui_running')
 
   hi ColorColumn      ctermbg=131  ctermfg=NONE guibg=#af5f5f guifg=NONE    cterm=NONE           gui=NONE
   hi signColumn       ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
-elseif &t_Co < 256
+elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
 
-  hi Normal           ctermbg=NONE        ctermfg=15          cterm=NONE
+  hi Normal           ctermbg=NONE        ctermfg=white          cterm=NONE
 
   set background=dark
 
-  hi Comment          ctermbg=NONE        ctermfg=8           cterm=NONE
-  hi Constant         ctermbg=NONE        ctermfg=9           cterm=NONE
-  hi Function         ctermbg=NONE        ctermfg=11          cterm=NONE
-  hi Identifier       ctermbg=NONE        ctermfg=4           cterm=NONE
-  hi PreProc          ctermbg=NONE        ctermfg=6           cterm=NONE
-  hi Special          ctermbg=NONE        ctermfg=2           cterm=NONE
-  hi Statement        ctermbg=NONE        ctermfg=12          cterm=NONE
-  hi String           ctermbg=NONE        ctermfg=10          cterm=NONE
+  hi Comment          ctermbg=NONE        ctermfg=gray        cterm=NONE
+  hi Constant         ctermbg=NONE        ctermfg=red         cterm=NONE
+  hi Function         ctermbg=NONE        ctermfg=yellow      cterm=NONE
+  hi Identifier       ctermbg=NONE        ctermfg=darkblue    cterm=NONE
+  hi PreProc          ctermbg=NONE        ctermfg=darkcyan    cterm=NONE
+  hi Special          ctermbg=NONE        ctermfg=darkgreen   cterm=NONE
+  hi Statement        ctermbg=NONE        ctermfg=blue        cterm=NONE
+  hi String           ctermbg=NONE        ctermfg=green       cterm=NONE
   hi Todo             ctermbg=NONE        ctermfg=NONE        cterm=reverse
-  hi Type             ctermbg=NONE        ctermfg=13          cterm=NONE
+  hi Type             ctermbg=NONE        ctermfg=magenta     cterm=NONE
 
-  hi Error            ctermbg=NONE        ctermfg=1           cterm=reverse
+  hi Error            ctermbg=NONE        ctermfg=darkred     cterm=reverse
   hi Ignore           ctermbg=NONE        ctermfg=NONE        cterm=NONE
-  hi Underlined       ctermbg=NONE        ctermfg=6           cterm=underline
+  hi Underlined       ctermbg=NONE        ctermfg=NONE        cterm=reverse
 
-  hi LineNr           ctermbg=0           ctermfg=7           cterm=NONE
-  hi NonText          ctermbg=NONE        ctermfg=8           cterm=NONE
+  hi LineNr           ctermbg=black       ctermfg=gray        cterm=NONE
+  hi NonText          ctermbg=NONE        ctermfg=darkgray    cterm=NONE
 
-  hi Pmenu            ctermbg=8           ctermfg=15          cterm=NONE
-  hi PmenuSbar        ctermbg=7           ctermfg=NONE        cterm=NONE
-  hi PmenuSel         ctermbg=6           ctermfg=0           cterm=NONE
-  hi PmenuThumb       ctermbg=6           ctermfg=NONE        cterm=NONE
+  hi Pmenu            ctermbg=darkgray    ctermfg=white       cterm=NONE
+  hi PmenuSbar        ctermbg=gray        ctermfg=NONE        cterm=NONE
+  hi PmenuSel         ctermbg=darkcyan    ctermfg=black       cterm=NONE
+  hi PmenuThumb       ctermbg=darkcyan    ctermfg=NONE        cterm=NONE
 
-  hi ErrorMsg         ctermbg=1           ctermfg=0           cterm=NONE
-  hi ModeMsg          ctermbg=2           ctermfg=0           cterm=NONE
-  hi MoreMsg          ctermbg=NONE        ctermfg=6           cterm=NONE
-  hi Question         ctermbg=NONE        ctermfg=10          cterm=NONE
-  hi WarningMsg       ctermbg=NONE        ctermfg=1           cterm=NONE
+  hi ErrorMsg         ctermbg=darkred     ctermfg=black       cterm=NONE
+  hi ModeMsg          ctermbg=darkgreen   ctermfg=black       cterm=NONE
+  hi MoreMsg          ctermbg=NONE        ctermfg=darkcyan    cterm=NONE
+  hi Question         ctermbg=NONE        ctermfg=green       cterm=NONE
+  hi WarningMsg       ctermbg=NONE        ctermfg=darkred     cterm=NONE
 
-  hi TabLine          ctermbg=8           ctermfg=3           cterm=NONE
-  hi TabLineFill      ctermbg=8           ctermfg=0           cterm=NONE
-  hi TabLineSel       ctermbg=3           ctermfg=0           cterm=NONE
+  hi TabLine          ctermbg=darkgray    ctermfg=darkyellow  cterm=NONE
+  hi TabLineFill      ctermbg=darkgray    ctermfg=black       cterm=NONE
+  hi TabLineSel       ctermbg=darkyellow  ctermfg=black       cterm=NONE
 
   hi Cursor           ctermbg=NONE        ctermfg=NONE        cterm=NONE
-  hi CursorColumn     ctermbg=8           ctermfg=NONE        cterm=NONE
-  hi CursorLine       ctermbg=NONE        ctermfg=NONE        cterm=underline
-  hi CursorLineNr     ctermbg=0           ctermfg=14          cterm=NONE
+  hi CursorColumn     ctermbg=darkgray    ctermfg=NONE        cterm=NONE
+  hi CursorLine       ctermbg=darkgray    ctermfg=NONE        cterm=NONE
+  hi CursorLineNr     ctermbg=black       ctermfg=cyan        cterm=NONE
 
   hi helpLeadBlank    ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi helpNormal       ctermbg=NONE        ctermfg=NONE        cterm=NONE
 
-  hi StatusLine       ctermbg=3           ctermfg=0           cterm=NONE
-  hi StatusLineNC     ctermbg=8           ctermfg=0           cterm=NONE
+  hi StatusLine       ctermbg=darkyellow  ctermfg=black       cterm=NONE
+  hi StatusLineNC     ctermbg=darkgray    ctermfg=black       cterm=NONE
 
-  hi Visual           ctermbg=12          ctermfg=0           cterm=NONE
-  hi VisualNOS        ctermbg=NONE        ctermfg=NONE        cterm=underline
+  hi Visual           ctermbg=blue        ctermfg=black       cterm=NONE
+  hi VisualNOS        ctermbg=white       ctermfg=black       cterm=NONE
 
-  hi FoldColumn       ctermbg=0           ctermfg=8           cterm=NONE
-  hi Folded           ctermbg=0           ctermfg=8           cterm=NONE
+  hi FoldColumn       ctermbg=black       ctermfg=darkgray    cterm=NONE
+  hi Folded           ctermbg=black       ctermfg=darkgray    cterm=NONE
 
-  hi VertSplit        ctermbg=8           ctermfg=8           cterm=NONE
-  hi WildMenu         ctermbg=12          ctermfg=0           cterm=NONE
+  hi VertSplit        ctermbg=darkgray    ctermfg=darkgray    cterm=NONE
+  hi WildMenu         ctermbg=blue        ctermfg=black       cterm=NONE
 
-  hi SpecialKey       ctermbg=NONE        ctermfg=8           cterm=NONE
-  hi Title            ctermbg=NONE        ctermfg=15          cterm=NONE
+  hi SpecialKey       ctermbg=NONE        ctermfg=darkgray    cterm=NONE
+  hi Title            ctermbg=NONE        ctermfg=white       cterm=NONE
 
-  hi DiffAdd          ctermbg=2           ctermfg=0           cterm=NONE
-  hi DiffChange       ctermbg=6           ctermfg=0           cterm=NONE
-  hi DiffDelete       ctermbg=1           ctermfg=0           cterm=NONE
-  hi DiffText         ctermbg=11          ctermfg=0           cterm=NONE
+  hi DiffAdd          ctermbg=darkgreen   ctermfg=black       cterm=NONE
+  hi DiffChange       ctermbg=darkcyan    ctermfg=black       cterm=NONE
+  hi DiffDelete       ctermbg=darkred     ctermfg=black       cterm=NONE
+  hi DiffText         ctermbg=yellow      ctermfg=black       cterm=NONE
 
-  hi IncSearch        ctermbg=1           ctermfg=0           cterm=NONE
-  hi Search           ctermbg=11          ctermfg=0           cterm=NONE
+  hi IncSearch        ctermbg=darkred     ctermfg=black       cterm=NONE
+  hi Search           ctermbg=yellow      ctermfg=black       cterm=NONE
 
-  hi Directory        ctermbg=NONE        ctermfg=14          cterm=NONE
-  hi MatchParen       ctermbg=0           ctermfg=11          cterm=NONE
+  hi Directory        ctermbg=NONE        ctermfg=cyan        cterm=NONE
+  hi MatchParen       ctermbg=black       ctermfg=yellow      cterm=NONE
 
-  hi SpellBad         ctermbg=NONE        ctermfg=1           cterm=undercurl
-  hi SpellCap         ctermbg=NONE        ctermfg=3           cterm=undercurl
-  hi SpellLocal       ctermbg=NONE        ctermfg=2           cterm=undercurl
-  hi SpellRare        ctermbg=NONE        ctermfg=5           cterm=undercurl
+  hi SpellBad         ctermbg=NONE        ctermfg=darkred     cterm=undercurl
+  hi SpellCap         ctermbg=NONE        ctermfg=darkyellow  cterm=undercurl
+  hi SpellLocal       ctermbg=NONE        ctermfg=darkgreen   cterm=undercurl
+  hi SpellRare        ctermbg=NONE        ctermfg=darkmagenta cterm=undercurl
 
-  hi ColorColumn      ctermbg=1           ctermfg=NONE        cterm=NONE
-  hi SignColumn       ctermbg=0           ctermfg=8           cterm=NONE
-
-  if s:os == "Windows"
-    hi Constant         ctermbg=NONE        ctermfg=12          cterm=NONE
-    hi Function         ctermbg=NONE        ctermfg=14          cterm=NONE
-    hi Identifier       ctermbg=NONE        ctermfg=1           cterm=NONE
-    hi PreProc          ctermbg=NONE        ctermfg=3           cterm=NONE
-    hi Statement        ctermbg=NONE        ctermfg=9           cterm=NONE
-
-    hi Error            ctermbg=NONE        ctermfg=4           cterm=reverse
-    hi Underlined       ctermbg=NONE        ctermfg=3           cterm=underline
-
-    hi PmenuSel         ctermbg=3           ctermfg=0           cterm=NONE
-    hi PmenuThumb       ctermbg=3           ctermfg=NONE        cterm=NONE
-
-    hi ErrorMsg         ctermbg=4           ctermfg=0           cterm=NONE
-    hi MoreMsg          ctermbg=NONE        ctermfg=3           cterm=NONE
-    hi WarningMsg       ctermbg=NONE        ctermfg=4           cterm=NONE
-
-    hi TabLine          ctermbg=8           ctermfg=6           cterm=NONE
-    hi TabLineSel       ctermbg=6           ctermfg=0           cterm=NONE
-
-    hi CursorLineNr     ctermbg=0           ctermfg=11          cterm=NONE
-
-    hi StatusLine       ctermbg=6           ctermfg=0           cterm=NONE
-
-    hi Visual           ctermbg=9           ctermfg=0           cterm=NONE
-
-    hi WildMenu         ctermbg=9           ctermfg=0           cterm=NONE
-
-    hi DiffChange       ctermbg=3           ctermfg=0           cterm=NONE
-    hi DiffDelete       ctermbg=4           ctermfg=0           cterm=NONE
-    hi DiffText         ctermbg=14          ctermfg=0           cterm=NONE
-
-    hi IncSearch        ctermbg=4           ctermfg=0           cterm=NONE
-    hi Search           ctermbg=14          ctermfg=0           cterm=NONE
-
-    hi Directory        ctermbg=NONE        ctermfg=11          cterm=NONE
-    hi MatchParen       ctermbg=0           ctermfg=14          cterm=NONE
-
-    hi SpellBad         ctermbg=NONE        ctermfg=4           cterm=undercurl
-    hi SpellCap         ctermbg=NONE        ctermfg=6           cterm=undercurl
-
-    hi ColorColumn      ctermbg=4           ctermfg=NONE        cterm=NONE
-  endif
+  hi ColorColumn      ctermbg=darkred     ctermfg=NONE        cterm=NONE
+  hi SignColumn       ctermbg=black       ctermfg=darkgray    cterm=NONE
 endif
 
 hi link Boolean            Constant
