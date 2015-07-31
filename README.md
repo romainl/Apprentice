@@ -69,16 +69,40 @@ Here is a sample `~/.Xresources` for you Linux/BSD users:
     *.color7:     #6C6C6C
     *.color15:    #FFFFFF
 
+And a sample `~/.minttyrc` for you Cygwin users:
+
+    ForegroundColour=188,188,188
+    BackgroundColour=38,38,38
+    Black=28,28,28
+    Red=175,95,95
+    Green=95,135,95
+    Yellow=135,135,95
+    Blue=95,135,175
+    Magenta=95,95,135
+    Cyan=95,135,135
+    White=108,108,108
+    BoldBlack=68,68,68
+    BoldRed=255,135,0
+    BoldGreen=135,175,135
+    BoldYellow=255,255,175
+    BoldBlue=143,175,215
+    BoldMagenta=135,135,175
+    BoldCyan=95,175,175
+    BoldWhite=255,255,255
+
+The values above can be used to customize the Windows console, too.
+
 Some code in iTerm, with `TERM=xterm`, using the color palette above:
 
 ![image](http://romainl.github.io/Apprentice/images/08termapprentice.png)
 
 ### All terminal emulators
 
-For best results, it is recommended to adjust your background color to the one used in the GUI/256color version of Apprentice:
+It is recommended to adjust your background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
 
-* xterm color: `235`
-* hexadecimal color: `#262626`
+* xterm notation: `235`
+* hexadecimal notation: `#262626`
+* rgb notation: `rgb(38,38,38)`
 
 ## Installing Apprentice.
 
@@ -116,12 +140,12 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
 ;-)
 
----
+## Derivative works
 
 If light colorschemes are more your thing, [Disciple](https://github.com/romainl/Disciple) is an experimental and mostly unmaintained negative version of Apprentice.
 
 On the same note, [Lightning](https://github.com/wimstefan/Lightning) is a light fork of Apprentice worth considering.
 
----
+[Intern](https://github.com/drzel/intern-hexchat-theme) is an [HexChat](https://hexchat.github.io/) theme based on Apprentice.
 
-[Intern](https://github.com/drzel/intern-hexchat-theme) is an [HexChat](https://hexchat.github.io/) theme based on Apprentice. Go team!
+Go team!
