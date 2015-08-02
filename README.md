@@ -94,17 +94,17 @@ And a sample `~/.minttyrc` for you Cygwin users:
     BoldCyan=95,175,175
     BoldWhite=255,255,255
 
-The values above can be used to customize the Windows console, too:
-
-![image](http://romainl.github.io/Apprentice/images/016console.png)
-
 Some code in iTerm, with `TERM=xterm`, using the color palette above:
 
 ![image](http://romainl.github.io/Apprentice/images/08termapprentice.png)
 
+Some code in the Windows console, with `TERM=cygwin`, using the color palette above:
+
+![image](http://romainl.github.io/Apprentice/images/016console.png)
+
 ### All terminal emulators
 
-It is recommended to adjust your background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
+I recommend to adjust your terminal's background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
 
 * xterm notation: `235`
 * hexadecimal notation: `#262626`
