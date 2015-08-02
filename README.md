@@ -12,6 +12,10 @@ Some code in iTerm, with `TERM=xterm-256color`:
 
 ![image](http://romainl.github.io/Apprentice/images/0256term.png)
 
+Some code in mintty, with `TERM=xterm-256color`:
+
+![image](http://romainl.github.io/Apprentice/images/0256mintty.png)
+
 Some code in iTerm, with `TERM=xterm`, using the Tango color palette:
 
 ![image](http://romainl.github.io/Apprentice/images/08termtango.png)
@@ -90,7 +94,9 @@ And a sample `~/.minttyrc` for you Cygwin users:
     BoldCyan=95,175,175
     BoldWhite=255,255,255
 
-The values above can be used to customize the Windows console, too.
+The values above can be used to customize the Windows console, too:
+
+![image](http://romainl.github.io/Apprentice/images/08consoleapprentice.png)
 
 Some code in iTerm, with `TERM=xterm`, using the color palette above:
 
