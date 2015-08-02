@@ -96,7 +96,7 @@ And a sample `~/.minttyrc` for you Cygwin users:
 
 The values above can be used to customize the Windows console, too:
 
-![image](http://romainl.github.io/Apprentice/images/016consoleapprentice.png)
+![image](http://romainl.github.io/Apprentice/images/016console.png)
 
 Some code in iTerm, with `TERM=xterm`, using the color palette above:
 
