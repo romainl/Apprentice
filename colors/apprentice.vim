@@ -40,6 +40,7 @@ if ($TERM =~ '256' && &t_Co >= 256) || has("gui_running")
   set background=dark
 
   hi Comment          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
+  hi Conceal          ctermbg=NONE ctermfg=250  guibg=NONE    guifg=#bcbcbc cterm=NONE           gui=NONE
   hi Constant         ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=NONE           gui=NONE
   hi Error            ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=reverse        gui=reverse
   hi Identifier       ctermbg=NONE ctermfg=67   guibg=NONE    guifg=#5f87af cterm=NONE           gui=NONE
@@ -120,6 +121,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set background=dark
 
   hi Comment          ctermbg=NONE        ctermfg=gray        cterm=NONE
+  hi Conceal          ctermbg=NONE        ctermfg=white       cterm=NONE
   hi Constant         ctermbg=NONE        ctermfg=red         cterm=NONE
   hi Function         ctermbg=NONE        ctermfg=yellow      cterm=NONE
   hi Identifier       ctermbg=NONE        ctermfg=darkblue    cterm=NONE
@@ -197,7 +199,7 @@ endif
 
 hi link Boolean            Constant
 hi link Character          Constant
-hi link Conceal            Normal
+" hi link Conceal            Normal
 hi link Conditional        Statement
 hi link Debug              Special
 hi link Define             PreProc
@@ -225,6 +227,8 @@ hi link htmlEndTag         htmlTagName
 hi link htmlLink           Function
 hi link htmlSpecialTagName htmlTagName
 hi link htmlTag            htmlTagName
+hi link htmlBold           Normal
+hi link htmlItalic         Normal
 hi link xmlTag             Statement
 hi link xmlTagName         Statement
 hi link xmlEndTag          Statement
