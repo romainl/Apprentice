@@ -34,7 +34,7 @@ endif
 
 let colors_name = "apprentice"
 
-if ($TERM =~ '256' && &t_Co >= 256) || has("gui_running")
+if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   if ($TERM_PROGRAM == 'iTerm.app')
     hi Normal         ctermbg=234  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
     hi LineNr         ctermbg=233  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
