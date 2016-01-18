@@ -154,6 +154,8 @@ On the same note, [Lightning](https://github.com/wimstefan/Lightning) is a light
 
 [Intern](https://github.com/drzel/intern-hexchat-theme) is an [HexChat](https://hexchat.github.io/) theme based on Apprentice.
 
-[This very enthusiastic fellow](https://github.com/xHN35RQ) created [a home](https://github.com/xHN35RQ/apprentice-colorschemes) for terminal emulator themes adapted from Apprentice. 
+[This very enthusiastic fellow](https://github.com/xHN35RQ) created [a home](https://github.com/xHN35RQ/apprentice-colorschemes) for terminal emulator themes adapted from Apprentice.
+
+A port of Apprentice is available for the IDEA platform. Check it out [over there.](https://github.com/jpeddicord/apprentice-idea)
 
 Go team!
