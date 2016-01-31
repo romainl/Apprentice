@@ -95,7 +95,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi StatusLine       ctermbg=101  ctermfg=235  guibg=#87875f guifg=#262626 cterm=NONE           gui=NONE
   hi StatusLineNC     ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=italic
 
-  hi Visual           ctermbg=110  ctermfg=235  guibg=#8fafd7 guifg=#262626 cterm=NONE           gui=NONE
+  hi Visual           ctermbg=235  ctermfg=110  guibg=#262626 guifg=#8fafd7 cterm=reverse        gui=reverse
   hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
   hi VertSplit        ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
@@ -105,10 +105,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi SpecialKey       ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
   hi Title            ctermbg=NONE ctermfg=231  guibg=NONE    guifg=#ffffff cterm=NONE           gui=NONE
 
-  hi DiffAdd          ctermbg=108  ctermfg=235  guibg=#87af87 guifg=#262626 cterm=NONE           gui=NONE
-  hi DiffChange       ctermbg=60   ctermfg=235  guibg=#5f5f87 guifg=#262626 cterm=NONE           gui=NONE
-  hi DiffDelete       ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
-  hi DiffText         ctermbg=103  ctermfg=235  guibg=#8787af guifg=#262626 cterm=NONE           gui=NONE
+  hi DiffAdd          ctermbg=235  ctermfg=108  guibg=#262626 guifg=#87af87 cterm=reverse        gui=reverse
+  hi DiffChange       ctermbg=235  ctermfg=60   guibg=#262626 guifg=#5f5f87 cterm=reverse        gui=reverse
+  hi DiffDelete       ctermbg=235  ctermfg=131  guibg=#262626 guifg=#af5f5f cterm=reverse        gui=reverse
+  hi DiffText         ctermbg=235  ctermfg=103  guibg=#262626 guifg=#8787af cterm=reverse        gui=reverse
 
   hi IncSearch        ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
   hi Search           ctermbg=229  ctermfg=235  guibg=#ffffaf guifg=#262626 cterm=NONE           gui=NONE
@@ -173,8 +173,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi StatusLine       ctermbg=darkyellow  ctermfg=black       cterm=NONE
   hi StatusLineNC     ctermbg=darkgray    ctermfg=black       cterm=NONE
 
-  hi Visual           ctermbg=blue        ctermfg=black       cterm=NONE
-  hi VisualNOS        ctermbg=white       ctermfg=black       cterm=NONE
+  hi Visual           ctermbg=black       ctermfg=blue        cterm=reverse
+  hi VisualNOS        ctermbg=black       ctermfg=white       cterm=reverse
 
   hi FoldColumn       ctermbg=black       ctermfg=darkgray    cterm=NONE
   hi Folded           ctermbg=black       ctermfg=darkgray    cterm=NONE
@@ -185,10 +185,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi SpecialKey       ctermbg=NONE        ctermfg=darkgray    cterm=NONE
   hi Title            ctermbg=NONE        ctermfg=white       cterm=NONE
 
-  hi DiffAdd          ctermbg=darkgreen   ctermfg=black       cterm=NONE
-  hi DiffChange       ctermbg=darkcyan    ctermfg=black       cterm=NONE
-  hi DiffDelete       ctermbg=darkred     ctermfg=black       cterm=NONE
-  hi DiffText         ctermbg=yellow      ctermfg=black       cterm=NONE
+  hi DiffAdd          ctermbg=black       ctermfg=darkgreen   cterm=reverse
+  hi DiffChange       ctermbg=black       ctermfg=darkcyan    cterm=reverse
+  hi DiffDelete       ctermbg=black       ctermfg=darkred     cterm=reverse
+  hi DiffText         ctermbg=black       ctermfg=yellow      cterm=reverse
 
   hi IncSearch        ctermbg=darkred     ctermfg=black       cterm=NONE
   hi Search           ctermbg=yellow      ctermfg=black       cterm=NONE
