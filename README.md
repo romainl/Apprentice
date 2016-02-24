@@ -134,6 +134,20 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
     colorscheme apprentice
 
+## Overriding colors.
+
+If you want to change some of the colors Apprentice uses, the best way to do this is with an `autocmd` on `BufWinEnter`. Simply overriding them after loading the `colorscheme` in your `vimrc` may not be sufficient, because `filetype` plugins can often reload your default `colorscheme`, resetting your changes.
+
+Here is an example, that goes into your `vimrc` to unset the background color and make matched parens stand out more:
+
+```vim
+augroup vimrc
+    autocmd!
+
+    autocmd BufWinEnter * hi Normal ctermbg=NONE | hi MatchParen cterm=reverse
+augroup END
+```
+
 ## What they say about Apprentice.
 
 * Vimgor, in #vim: *“A colorscheme as subtle, gentle and pleasant as its creator isn't.”*
