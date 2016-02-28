@@ -158,4 +158,6 @@ On the same note, [Lightning](https://github.com/wimstefan/Lightning) is a light
 
 A port of Apprentice is available for the IDEA platform. Check it out [over there.](https://github.com/jpeddicord/apprentice-idea)
 
+[Elysian](https://github.com/nhooyr/elysian.vim) is a new very nice colorscheme for 256color terminal emulators inspired by Apprentice.
+
 Go team!
