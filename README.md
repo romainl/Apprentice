@@ -124,6 +124,8 @@ but it could be:
 
 or whatever works for you.
 
+Arch users may be happy to hear that Apprentice [has landed in AUR](https://aur.archlinux.org/packages/vim-apprentice/). To install it, use an AUR helper — `yaourt -S vim-apprentice` — or download the `PKGBUILD` and do `$ makepkg -i` to install Apprentice.
+
 ## Enabling Apprentice.
 
 To test Apprentice, just type this command from *normal* mode and hit `Enter`:
