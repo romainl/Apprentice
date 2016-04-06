@@ -1,7 +1,7 @@
 let g:airline#themes#apprentice#palette = {}
 
-let s:N1   = [ '#bcbcbc', '#5f5f87', 250, 60 ]
-let s:N2   = [ '#1c1c1c', '#ff8700', 234, 65 ]
+let s:N1   = [ '#1c1c1c', '#ff8700', 234, 65 ]
+let s:N2   = [ '#bcbcbc', '#5f5f87', 250, 60 ]
 let s:N3   = [ '#262626', '#87875f', 235, 101 ]
 let g:airline#themes#apprentice#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
