@@ -46,7 +46,7 @@ let g:airline#themes#apprentice#palette = {}
 let s:modified = { 'airline_c': [ s:gui09, '', s:cterm09, '', '' ] }
 
 " Normal mode
-let s:N1 = [ s:guiBG , s:gui04 , s:ctermBG , s:cterm04  ]
+let s:N1 = [ s:guiBG , s:gui03 , s:ctermBG , s:cterm03  ]
 let s:N2 = [ s:guiBG , s:gui08 , s:ctermBG , s:cterm08 ]
 let s:N3 = [ s:guiFG , s:guiBG , s:ctermFG , s:ctermBG  ]
 let g:airline#themes#apprentice#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
