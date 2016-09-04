@@ -253,9 +253,7 @@ hi link diffOnly                 WarningMsg
 hi link diffRemoved              WarningMsg
 hi link diffAdded                String
 
-if $NVIM_TUI_ENABLE_TRUE_COLOR == 1
-  let g:terminal_foreground = "#BCBCBC"
-  let g:terminal_background = "#262626"
+if has("nvim") && exists("&termguicolors") && &termguicolors
   let g:terminal_color_0    = "#1C1C1C"
   let g:terminal_color_8    = "#444444"
   let g:terminal_color_1    = "#AF5F5F"
