@@ -134,7 +134,13 @@ To test Apprentice, just type this command from *normal* mode and hit `Enter`:
 
 If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`, preferably near the end:
 
-    colorscheme apprentice
+## Lightline and Airline themes
+
+I removed them from `master` but you can still find them in the "fancylines-and-neovim" branch.
+
+## Neovim terminal theme
+
+I removed it from `master` but you can still find it in the "fancylines-and-neovim" branch.colorscheme apprentice
 
 ## What they say about Apprentice.
 
