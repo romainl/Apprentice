@@ -40,17 +40,17 @@ As an alternative to changing your default `TERM` to `xterm-256color` or similar
 
 The table below contains a subset of Apprentice’s palette. You can use a color picker or copy/paste these values:
 
-| Intensity        | Normal                                                                      | Intensity        | Bright                                                                      |
-|------------------|-----------------------------------------------------------------------------|------------------|-----------------------------------------------------------------------------|
-| 0                | `#1C1C1C` ![#1C1C1C](http://romainl.github.io/Apprentice/images/1c1c1c.png) | 8                | `#444444` ![#444444](http://romainl.github.io/Apprentice/images/444444.png) |
-| 1                | `#AF5F5F` ![#AF5F5F](http://romainl.github.io/Apprentice/images/af5f5f.png) | 9                | `#FF8700` ![#FF8700](http://romainl.github.io/Apprentice/images/ff8700.png) |
-| 2                | `#5F875F` ![#5F875F](http://romainl.github.io/Apprentice/images/5f875f.png) | 10               | `#87AF87` ![#87AF87](http://romainl.github.io/Apprentice/images/87af87.png) |
-| 3                | `#87875F` ![#87875F](http://romainl.github.io/Apprentice/images/87875f.png) | 11               | `#FFFFAF` ![#FFFFAF](http://romainl.github.io/Apprentice/images/ffffaf.png) |
-| 4                | `#5F87AF` ![#5F87AF](http://romainl.github.io/Apprentice/images/5f87af.png) | 12               | `#8FAFD7` ![#8FAFD7](http://romainl.github.io/Apprentice/images/8fafd7.png) |
-| 5                | `#5F5F87` ![#5F5F87](http://romainl.github.io/Apprentice/images/5f5f87.png) | 13               | `#8787AF` ![#8787AF](http://romainl.github.io/Apprentice/images/8787af.png) |
-| 6                | `#5F8787` ![#5F8787](http://romainl.github.io/Apprentice/images/5f8787.png) | 14               | `#5FAFAF` ![#5FAFAF](http://romainl.github.io/Apprentice/images/5fafaf.png) |
-| 7                | `#6C6C6C` ![#6C6C6C](http://romainl.github.io/Apprentice/images/6c6c6c.png) | 15               | `#FFFFFF` ![#FFFFFF](http://romainl.github.io/Apprentice/images/ffffff.png) |
-| Foreground color | `#BCBCBC` ![#BCBCBC](http://romainl.github.io/Apprentice/images/bcbcbc.png) | Background color | `#262626` ![#262626](http://romainl.github.io/Apprentice/images/262626.png) |
+| Intensity        | Normal                   | Intensity        | Bright                   |
+|------------------|--------------------------|------------------|--------------------------|
+| 0                | `#1C1C1C` ![#1C1C1C][0]  | 8                | `#444444` ![#444444][0]  |
+| 1                | `#AF5F5F` ![#AF5F5F][1]  | 9                | `#FF8700` ![#FF8700][9]  |
+| 2                | `#5F875F` ![#5F875F][2]  | 10               | `#87AF87` ![#87AF87][10] |
+| 3                | `#87875F` ![#87875F][3]  | 11               | `#FFFFAF` ![#FFFFAF][11] |
+| 4                | `#5F87AF` ![#5F87AF][4]  | 12               | `#8FAFD7` ![#8FAFD7][12] |
+| 5                | `#5F5F87` ![#5F5F87][5]  | 13               | `#8787AF` ![#8787AF][13] |
+| 6                | `#5F8787` ![#5F8787][6]  | 14               | `#5FAFAF` ![#5FAFAF][14] |
+| 7                | `#6C6C6C` ![#6C6C6C][7]  | 15               | `#FFFFFF` ![#FFFFFF][15] |
+| Foreground color | `#BCBCBC` ![#BCBCBC][16] | Background color | `#262626` ![#262626][17] |
 
 Here is a sample `~/.Xresources` for you Linux/BSD users. You can import this into [terminal.sexy](http://terminal.sexy) to convert it to the appropriate color scheme format for your preferred terminal emulator:
 
@@ -171,3 +171,22 @@ A port of Apprentice is available for the IDEA platform. Check it out [over ther
 [apprentice-theme](https://github.com/sjas/apprentice-theme) is a port to spacemacs.
 
 Go team!
+
+[0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
+[1]:  http://romainl.github.io/Apprentice/images/af5f5f.png
+[2]:  http://romainl.github.io/Apprentice/images/5f875f.png
+[3]:  http://romainl.github.io/Apprentice/images/87875f.png
+[4]:  http://romainl.github.io/Apprentice/images/5f87af.png
+[5]:  http://romainl.github.io/Apprentice/images/5f5f87.png
+[6]:  http://romainl.github.io/Apprentice/images/5f8787.png
+[7]:  http://romainl.github.io/Apprentice/images/6c6c6c.png
+[8]:  http://romainl.github.io/Apprentice/images/444444.png
+[9]:  http://romainl.github.io/Apprentice/images/ff8700.png
+[10]: http://romainl.github.io/Apprentice/images/87af87.png
+[11]: http://romainl.github.io/Apprentice/images/ffffaf.png
+[12]: http://romainl.github.io/Apprentice/images/8fafd7.png
+[13]: http://romainl.github.io/Apprentice/images/8787af.png
+[14]: http://romainl.github.io/Apprentice/images/5fafaf.png
+[15]: http://romainl.github.io/Apprentice/images/ffffff.png
+[16]: http://romainl.github.io/Apprentice/images/bcbcbc.png
+[17]: http://romainl.github.io/Apprentice/images/262626.png
