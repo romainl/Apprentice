@@ -26,9 +26,19 @@ Apprentice is designed first and foremost to look “good” in terminal emulato
 
 ### GVim/MacVim
 
-There is nothing to do for GVim/MacVim as GUI Vim supports millions of colors by default.
+There is nothing to do for GVim/MacVim as GUI Vim supports “True Color” by default.
 
-### 256color-ready Terminal emulators
+### “True Color” terminal emulators
+
+Since January 2016, Vim has been able to talk in “True Color” to terminal emulators supporting that feature. This means that it is now not only possible but also very easy to have **the exact same colors** in TUI Vim and GUI Vim.
+
+In practice, this new development doesn't change much for Apprentice which uses the exact same colors in the GUI as it does in the TUI anyway. But you can still try “True Color” if your setup satisfies the requirements with the following command:
+
+    :set termguicolors
+
+See [this gist](https://gist.github.com/XVilka/8346728) for more information and support status and, of course, `:help termguicolors`.
+
+### 256color-ready terminal emulators
 
 Most terminal emulators in use nowadays *can* display 256 colors but most of them use a default `TERM` that tells Vim otherwise. Assuming your terminal emulator actually supports 256 colors, you must instruct it to brag about its terminal-hood by setting the correct `TERM` environment variable.
 
@@ -106,9 +116,11 @@ Some code in the Windows console, with `TERM=cygwin`, using the color palette ab
 
 I recommend to adjust your terminal's background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
 
-* xterm notation: `235`
-* hexadecimal notation: `#262626`
-* rgb notation: `rgb(38,38,38)`
+| Notation    | Value           |
+|-------------|-----------------|
+| xterm       | `235`           |
+| hexadecimal | `#262626`       |
+| rgb         | `rgb(38,38,38)` |
 
 ## Installing Apprentice.
 
@@ -132,7 +144,9 @@ To test Apprentice, just type this command from *normal* mode and hit `Enter`:
 
     :colorscheme apprentice
 
-If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`, preferably near the end:
+If you like what you see and want to make Apprentice your default colorscheme, add this line to your `~/.vimrc`, preferably near the end, after any `syntax enable`, `syntax on`, `filetype ... on`, `call plug#end()`, or `call vundle#end()` line:
+
+    colorscheme apprentice
 
 ## Lightline and Airline themes
 
@@ -140,7 +154,7 @@ I removed them from `master` but you can still find them in the "fancylines-and-
 
 ## Neovim terminal theme
 
-I removed it from `master` but you can still find it in the "fancylines-and-neovim" branch.colorscheme apprentice
+I removed it from `master` but you can still find it in the "fancylines-and-neovim" branch.
 
 ## What they say about Apprentice.
 
