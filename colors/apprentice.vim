@@ -199,7 +199,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi SpellLocal       ctermbg=NONE        ctermfg=darkgreen   cterm=undercurl
   hi SpellRare        ctermbg=NONE        ctermfg=darkmagenta cterm=undercurl
 
-  hi ColorColumn      ctermbg=darkred     ctermfg=NONE        cterm=NONE
+  hi ColorColumn      ctermbg=black     ctermfg=NONE        cterm=NONE
   hi SignColumn       ctermbg=black       ctermfg=darkgray    cterm=NONE
 endif
 
