@@ -2,6 +2,7 @@
 " Author:       Romain Lafourcade (romainlafourcade@gmail.com)
 " Description:  Essentially a streamlining and conversion to xterm colors of
 "               'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
+" Last Change:  2017 Aug 06
 
 " MADE-UP NAME    HEX        RGB                   XTERM  ANSI
 " ========================================================================
