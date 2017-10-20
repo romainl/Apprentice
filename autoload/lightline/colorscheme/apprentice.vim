@@ -64,3 +64,4 @@ let s:p.visual.left     = [ [ s:guiBG , s:gui0B , s:ctermBG , s:cterm0B ], [ s:g
 let s:p.visual.right    = [ [ s:guiBG , s:gui0B , s:ctermBG , s:cterm0B ], [ s:guiBG , s:gui08 , s:ctermBG , s:cterm08 ]]
 
 let g:lightline#colorscheme#apprentice#palette = s:p
+

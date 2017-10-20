@@ -90,3 +90,4 @@ let s:CP2 = s:N2
 let s:CP3 = s:N3
 
 let g:airline#themes#apprentice#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
+
