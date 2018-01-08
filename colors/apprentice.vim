@@ -6,26 +6,26 @@
 
 " MADE-UP NAME    HEX        RGB                   XTERM  ANSI
 " ========================================================================
-" almost black    #1c1c1c    rgb(28, 28, 28)       234    0
+" almost black    #1c1c1c    rgb(28, 28, 28)       234    black
 " darker grey     #262626    rgb(38, 38, 38)       235    background color
-" dark grey       #303030    rgb(48, 48, 48)       236    8
-" grey            #444444    rgb(68, 68, 68)       238    8
-" medium grey     #585858    rgb(88, 88, 88)       240    8
-" light grey      #6c6c6c    rgb(108, 108, 108)    242    7
+" dark grey       #303030    rgb(48, 48, 48)       236    darkgray
+" grey            #444444    rgb(68, 68, 68)       238    darkgray
+" medium grey     #585858    rgb(88, 88, 88)       240    darkgray
+" light grey      #6c6c6c    rgb(108, 108, 108)    242    gray
 " lighter grey    #bcbcbc    rgb(188, 188, 188)    250    foreground color
-" white           #ffffff    rgb(255, 255, 255)    231    15
-" purple          #5f5f87    rgb(95, 95, 135)      60     5
-" light purple    #8787af    rgb(135, 135, 175)    103    13
-" green           #5f875f    rgb(95, 135, 95)      65     2
-" light green     #87af87    rgb(135, 175, 135)    108    10
-" aqua            #5f8787    rgb(95, 135, 135)     66     6
-" light aqua      #5fafaf    rgb(95, 175, 175)     73     14
-" blue            #5f87af    rgb(95, 135, 175)     67     4
-" light blue      #8fafd7    rgb(143, 175, 215)    110    12
-" red             #af5f5f    rgb(175, 95, 95)      131    1
-" orange          #ff8700    rgb(255, 135, 0)      208    9
-" ocre            #87875f    rgb(135, 135, 95)     101    3
-" yellow          #ffffaf    rgb(255, 255, 175)    229    11
+" white           #ffffff    rgb(255, 255, 255)    231    white
+" purple          #5f5f87    rgb(95, 95, 135)      60     darkmagenta
+" light purple    #8787af    rgb(135, 135, 175)    103    magenta
+" green           #5f875f    rgb(95, 135, 95)      65     darkgreen
+" light green     #87af87    rgb(135, 175, 135)    108    green
+" aqua            #5f8787    rgb(95, 135, 135)     66     darkcyan
+" light aqua      #5fafaf    rgb(95, 175, 175)     73     cyan
+" blue            #5f87af    rgb(95, 135, 175)     67     darkblue
+" light blue      #8fafd7    rgb(143, 175, 215)    110    blue
+" red             #af5f5f    rgb(175, 95, 95)      131    darkred
+" orange          #ff8700    rgb(255, 135, 0)      208    red
+" ocre            #87875f    rgb(135, 135, 95)     101    darkyellow
+" yellow          #ffffaf    rgb(255, 255, 175)    229    yellow
 
 hi clear
 
@@ -110,8 +110,18 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
   hi Directory        ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#5fafaf cterm=NONE           gui=NONE
 
-  hi debugPC          ctermbg=67                guibg=#5f87af
-  hi debugBreakpoint  ctermbg=131               guibg=#af5f5f
+  hi debugPC          ctermbg=67   ctermfg=NONE guibg=#5f87af guifg=NONE    cterm=NONE           gui=NONE
+  hi debugBreakpoint  ctermbg=131  ctermfg=NONE guibg=#af5f5f guifg=NONE    cterm=NONE           gui=NONE
+
+  hi User1            ctermbg=65   ctermfg=238  guibg=#5f875f guifg=#444444 cterm=NONE           gui=NONE
+  hi User2            ctermbg=108  ctermfg=238  guibg=#87af87 guifg=#444444 cterm=NONE           gui=NONE
+  hi User3            ctermbg=101  ctermfg=238  guibg=#87875f guifg=#444444 cterm=NONE           gui=NONE
+  hi User4            ctermbg=229  ctermfg=238  guibg=#ffffaf guifg=#444444 cterm=NONE           gui=NONE
+  hi User5            ctermbg=66   ctermfg=238  guibg=#5f8787 guifg=#444444 cterm=NONE           gui=NONE
+  hi User6            ctermbg=73   ctermfg=238  guibg=#5fafaf guifg=#444444 cterm=NONE           gui=NONE
+  hi User7            ctermbg=231  ctermfg=238  guibg=#ffffff guifg=#444444 cterm=NONE           gui=NONE
+  hi User8            ctermbg=242  ctermfg=238  guibg=#6c6c6c guifg=#444444 cterm=NONE           gui=NONE
+  hi User9            ctermbg=234  ctermfg=238  guibg=#1c1c1c guifg=#444444 cterm=NONE           gui=NONE
 
   if has("gui_running")
     hi SpellBad       ctermbg=NONE ctermfg=131  guibg=NONE    guifg=NONE    cterm=undercurl      gui=undercurl guisp=#af5f5f
@@ -212,8 +222,18 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi ColorColumn      ctermbg=black       ctermfg=NONE        cterm=NONE
   hi SignColumn       ctermbg=black       ctermfg=darkgray    cterm=NONE
 
-  hi debugPC          ctermbg=blue
-  hi debugBreakpoint  ctermbg=red
+  hi debugPC          ctermbg=blue        ctermfg=NONE        cterm=NONE
+  hi debugBreakpoint  ctermbg=red         ctermfg=NONE        cterm=NONE
+
+  hi User1            ctermbg=darkgreen   ctermfg=darkgray    cterm=NONE
+  hi User2            ctermbg=green       ctermfg=darkgray    cterm=NONE
+  hi User3            ctermbg=darkyellow  ctermfg=darkgray    cterm=NONE
+  hi User4            ctermbg=yellow      ctermfg=darkgray    cterm=NONE
+  hi User5            ctermbg=darkcyan    ctermfg=darkgray    cterm=NONE
+  hi User6            ctermbg=cyan        ctermfg=darkgray    cterm=NONE
+  hi User7            ctermbg=white       ctermfg=darkgray    cterm=NONE
+  hi User8            ctermbg=gray        ctermfg=darkgray    cterm=NONE
+  hi User9            ctermbg=black       ctermfg=darkgray    cterm=NONE
 endif
 
 hi link Boolean                  Constant
