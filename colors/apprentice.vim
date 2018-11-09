@@ -37,6 +37,7 @@ let colors_name = "apprentice"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi Normal           ctermbg=235  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
+  hi Terminal         ctermbg=235  ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
   hi LineNr           ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
   hi FoldColumn       ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
   hi Folded           ctermbg=234  ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
@@ -130,6 +131,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
 
   hi Normal           ctermbg=NONE        ctermfg=white          cterm=NONE
+  hi Terminal         ctermbg=NONE        ctermfg=white          cterm=NONE
 
   set background=dark
 
