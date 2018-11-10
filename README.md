@@ -138,7 +138,7 @@ or whatever works for you.
 
 Arch users may be happy to hear that Apprentice [has landed in AUR](https://aur.archlinux.org/packages/vim-apprentice/). To install it, use an AUR helper:
 
-    yaourt -S vim-apprentice
+    $ yaourt -S vim-apprentice
 
 or download the `PKGBUILD` and do:
 
