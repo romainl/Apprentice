@@ -283,6 +283,10 @@ let links = [
             \ ['diffOnly', 'WarningMsg'],
             \ ['diffRemoved', 'WarningMsg'],
             \ ['diffAdded', 'String'],
+            \ ['vimAutoCmdSfxList', 'Type'],
+            \ ['vimFunction', 'Function'],
+            \ ['vimIsCommand', 'Statement'],
+            \ ['vimUserFunc', 'Function'],
             \ ]
 augroup Apprentice
     autocmd!
