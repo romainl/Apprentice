@@ -1,0 +1,182 @@
+# vim: set ft=colortemplate cursorline cursorcolumn nomodeline:
+Full name:       Apprentice
+Short name:      apprentice
+Author:          Romain Lafourcade <romainlafourcade@gmail.com>
+Maintainer:      Romain Lafourcade <romainlafourcade@gmail.com>
+Description:  Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran <jeetsukumaran@gmailcom>
+
+Terminal Colors: 256,16
+Background:      dark
+
+#
+# Palette
+#
+
+Color: almost_black #1c1c1c 234 0
+Color: darker_grey  #262626 235
+Color: dark_grey    #303030 236 8
+Color: grey         #444444 238 8
+Color: medium_grey  #585858 240 8
+Color: light_grey   #6c6c6c 242 7
+Color: lighter_grey #bcbcbc 250
+Color: white        #ffffff 231 15
+Color: purple       #5f5f87 60  5
+Color: light_purple #8787af 103 13
+Color: green        #5f875f 65  2
+Color: light_green  #87af87 108 10
+Color: aqua         #5f8787 66  6
+Color: light_aqua   #5fafaf 73  14
+Color: blue         #5f87af 67  4
+Color: light_blue   #8fafd7 110 12
+Color: red          #af5f5f 131 1
+Color: orange       #ff8700 208 9
+Color: ocre         #87875f 101 3
+Color: yellow       #ffffaf 229 11
+
+#
+# Highlighting
+#
+
+Normal           lighter_grey darker_grey
+Terminal         lighter_grey darker_grey
+LineNr           light_grey   almost_black
+FoldColumn       light_grey   almost_black
+Folded           light_grey   almost_black
+MatchParen       yellow       almost_black
+SignColumn       light_grey   almost_black
+
+Comment          medium_grey  none
+Conceal          lighter_grey none
+Constant         orange       none
+Error            red          none        reverse
+Identifier       blue         none
+Ignore           none         none
+PreProc          aqua         none
+Special          green        none
+Statement        light_blue   none
+String           light_green  none
+Todo             none         none        reverse
+Type             light_purple none
+Underlined       aqua         none        underline
+
+NonText          medium_grey  none
+
+Pmenu            lighter_grey grey
+PmenuSbar        none         medium_grey
+PmenuSel         darker_grey  aqua
+PmenuThumb       aqua         aqua
+
+ErrorMsg         darker_grey  red
+ModeMsg          darker_grey  light_green
+MoreMsg          aqua         none
+Question         light_green  none
+WarningMsg       red          none
+
+TabLine          ocre         grey
+TabLineFill      grey         grey
+TabLineSel       darker_grey  ocre
+
+Cursor           none         light_grey
+CursorColumn     none         dark_grey
+CursorLineNr     light_aqua   dark_grey
+CursorLine       none         dark_grey
+
+helpLeadBlank    none         none
+helpNormal       none         none
+
+StatusLine       darker_grey  ocre
+StatusLineNC     ocre         grey
+
+StatusLineTerm   darker_grey  ocre
+StatusLineTermNC ocre         grey
+
+Visual           light_blue   darker_grey reverse
+VisualNOS        none         none        underline
+
+VertSplit        grey         grey
+WildMenu         darker_grey  light_blue
+
+Function         yellow       none
+SpecialKey       medium_grey  none
+Title            white        none
+
+DiffAdd          light_green  darker_grey reverse
+DiffChange       light_purple darker_grey reverse
+DiffDelete       red          darker_grey reverse
+DiffText         orange       darker_grey reverse
+
+IncSearch        darker_grey  red
+Search           darker_grey  yellow
+
+Directory        light_aqua   none
+
+SpellBad         red          none        undercurl guisp=red
+SpellCap         light_aqua   none        undercurl guisp=light_aqua
+SpellLocal       green        none        undercurl guisp=green
+SpellRare        orange       none        undercurl guisp=orange
+
+ColorColumn      none         almost_black
+
+verbatim
+    hi debugPC         ctermbg=@blue guibg=@blue
+    hi debugBreakpoint ctermbg=@red  guibg=@red
+endverbatim
+
+#
+# Links
+#
+
+verbatim
+    let links = [
+                \ ['Boolean', 'Constant'],
+                \ ['Character', 'Constant'],
+                \ ['Conditional', 'Statement'],
+                \ ['Debug', 'Special'],
+                \ ['Define', 'PreProc'],
+                \ ['Delimiter', 'Special'],
+                \ ['Exception', 'Statement'],
+                \ ['Float', 'Number'],
+                \ ['HelpCommand', 'Statement'],
+                \ ['HelpExample', 'Statement'],
+                \ ['Include', 'PreProc'],
+                \ ['Keyword', 'Statement'],
+                \ ['Label', 'Statement'],
+                \ ['Macro', 'PreProc'],
+                \ ['Number', 'Constant'],
+                \ ['Operator', 'Statement'],
+                \ ['PreCondit', 'PreProc'],
+                \ ['Repeat', 'Statement'],
+                \ ['SpecialChar', 'Special'],
+                \ ['SpecialComment', 'Special'],
+                \ ['StorageClass', 'Type'],
+                \ ['Structure', 'Type'],
+                \ ['Tag', 'Special'],
+                \ ['Terminal', 'Normal'],
+                \ ['Typedef', 'Type'],
+                \ ['asciidocQuotedEmphasized', 'PreProc'],
+                \ ['diffAdded', 'String'],
+                \ ['diffBDiffer', 'WarningMsg'],
+                \ ['diffCommon', 'WarningMsg'],
+                \ ['diffDiffer', 'WarningMsg'],
+                \ ['diffIdentical', 'WarningMsg'],
+                \ ['diffIsA', 'WarningMsg'],
+                \ ['diffNoEOL', 'WarningMsg'],
+                \ ['diffOnly', 'WarningMsg'],
+                \ ['diffRemoved', 'WarningMsg'],
+                \ ['htmlBold', 'Normal'],
+                \ ['htmlEndTag', 'htmlTagName'],
+                \ ['htmlItalic', 'Normal'],
+                \ ['htmlLink', 'Function'],
+                \ ['htmlSpecialTagName', 'htmlTagName'],
+                \ ['htmlTag', 'htmlTagName'],
+                \ ['markdownItalic', 'PreProc'],
+                \ ['xmlEndTag', 'Statement'],
+                \ ['xmlTag', 'Statement'],
+                \ ['xmlTagName', 'Statement'],
+                \ ]
+
+    augroup Apprentice
+        autocmd!
+        autocmd ColorScheme * if expand("<amatch>") == "apprentice" | for link in links | execute 'hi link' link[0] link[1] | endfor | else | for link in links | execute 'hi link' link[0] 'NONE' | endfor | endif
+    augroup END
+endverbatim
