@@ -1,0 +1,19 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+# Make the indentation in both ordered and unordered lists line up
+#
+# Many markdown documents use trailing spaces to denote which paragraphs wrap
+# and which don't, so avoid trimming these
+[*.{md,rmd,mkd,mkdn,mdwn,mdown,markdown}]
+indent_size = 3
+indent_style = space
+trim_trailing_whitespace = false
