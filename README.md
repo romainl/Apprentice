@@ -4,6 +4,9 @@ Apprentice is a dark, low-contrast colorscheme for Vim based on the awesome [Sor
 
 It is essentially a streamlined version of the original, with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256colors-ready terminal emulators and GUI Vim.
 
+This colorscheme has been created with the help of the incredibly useful
+[Colortemplate](https://github.com/lifepillar/vim-colortemplate): *The Toolkit for Vim Colorscheme Designers*.
+
 Some code in MacVim:
 
 ![image](http://romainl.github.io/Apprentice/images/0macvim.png)
