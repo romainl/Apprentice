@@ -61,6 +61,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi Underlined       ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=underline      gui=underline
 
   hi NonText          ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
+  hi EndOfBuffer      ctermbg=NONE ctermfg=240  guibg=NONE    guifg=#585858 cterm=NONE           gui=NONE
 
   hi Pmenu            ctermbg=238  ctermfg=250  guibg=#444444 guifg=#bcbcbc cterm=NONE           gui=NONE
   hi PmenuSbar        ctermbg=240  ctermfg=NONE guibg=#585858 guifg=NONE    cterm=NONE           gui=NONE
@@ -76,6 +77,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi TabLine          ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=NONE
   hi TabLineFill      ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
   hi TabLineSel       ctermbg=101  ctermfg=235  guibg=#87875f guifg=#262626 cterm=NONE           gui=NONE
+
+  hi ToolbarLine      ctermbg=234  ctermfg=NONE guibg=#1c1c1c guifg=NONE    cterm=NONE           gui=NONE
+  hi ToolbarButton    ctermbg=240  ctermfg=250  guibg=#585858 guifg=#bcbcbc cterm=NONE           gui=NONE
 
   hi Cursor           ctermbg=242  ctermfg=NONE guibg=#6c6c6c guifg=NONE    cterm=NONE           gui=NONE
   hi CursorColumn     ctermbg=236  ctermfg=NONE guibg=#303030 guifg=NONE    cterm=NONE           gui=NONE
@@ -153,6 +157,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 
   hi LineNr           ctermbg=black       ctermfg=gray        cterm=NONE
   hi NonText          ctermbg=NONE        ctermfg=darkgray    cterm=NONE
+  hi EndOfBuffer      ctermbg=NONE        ctermfg=darkgray    cterm=NONE
 
   hi Pmenu            ctermbg=darkgray    ctermfg=white       cterm=NONE
   hi PmenuSbar        ctermbg=gray        ctermfg=NONE        cterm=NONE
@@ -168,6 +173,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   hi TabLine          ctermbg=darkgray    ctermfg=darkyellow  cterm=NONE
   hi TabLineFill      ctermbg=darkgray    ctermfg=black       cterm=NONE
   hi TabLineSel       ctermbg=darkyellow  ctermfg=black       cterm=NONE
+
+  hi ToolbarLine      ctermbg=black       ctermfg=NONE        cterm=NONE
+  hi ToolbarButton    ctermbg=gray        ctermfg=white       cterm=NONE
 
   hi Cursor           ctermbg=NONE        ctermfg=NONE        cterm=NONE
   hi CursorColumn     ctermbg=darkgray    ctermfg=NONE        cterm=NONE
