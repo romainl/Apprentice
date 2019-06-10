@@ -170,6 +170,12 @@ If you don't want to maintain your own fork of Apprentice you can add something 
 
 See [this Gist](https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f) for reference.
 
+## Hacking Apprentice
+
+Apprentice now comes with the very template used to generate it: `colors/apprentice.erb`. The template, based on [vim-rnb](https://github.com/romainl/vim-rnb), is well maintained and documented.
+
+If you feel like making a pull request, make sure you commit both the modified template *and* the modified colorscheme.
+
 ## Lightline and Airline themes
 
 I removed them from `master` but you can still find them in the "fancylines-and-neovim" branch.
