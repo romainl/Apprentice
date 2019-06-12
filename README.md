@@ -194,6 +194,8 @@ I removed it from `master` but you can still find it in the "fancylines-and-neov
 
 * Gfixler again, in [r/vim](http://www.reddit.com/r/vim/comments/30dph9/solarizedlike_colorschemes/cprnfxm): *“My favorite color scheme by far is Apprentice, but again, it's completely subjective. Pick something that makes you feel good while using it. I particularly love Apprentice's selection blue color. I select things all the time just to experience it. So pretty.”*
 
+* lopid, in #vim: *“waah waah”*
+
 ;-)
 
 ## Derivative works
