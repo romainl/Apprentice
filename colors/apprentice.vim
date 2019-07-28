@@ -2,6 +2,7 @@
 " Author:      Romain Lafourcade (romainlafourcade@gmail.com)
 " Webpage:     https://github.com/romainl/Apprentice
 " Description: Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
+" Last Change: 2019-07-28
 
 hi clear
 
