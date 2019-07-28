@@ -114,7 +114,7 @@ Some code in the Windows console, with `TERM=cygwin`, using the color palette ab
 
 ### All terminal emulators
 
-I recommend to adjust your terminal's background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
+I recommend adjusting your terminal's background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
 
 | Notation    | Value           |
 |-------------|-----------------|
@@ -132,7 +132,13 @@ The canonical location is:
 
 but it could be:
 
+    " with Pathogen
     bundle/apprentice/colors/apprentice.vim
+
+or:
+
+    " with :help packages
+    pack/foobar/start/apprentice/colors/apprentice.vim
 
 or whatever works for you.
 
