@@ -128,7 +128,7 @@
         [ "FoldColumn", almost_black, light_grey, "NONE" ],
         [ "Folded", almost_black, light_grey, "NONE" ],
         [ "MatchParen", almost_black, yellow, "NONE" ],
-        [ "signColumn", almost_black, light_grey, "NONE" ],
+        [ "SignColumn", almost_black, light_grey, "NONE" ],
         [ "Comment", "NONE", medium_grey, "NONE" ],
         [ "Conceal", "NONE", lighter_grey, "NONE" ],
         [ "Constant", "NONE", orange, "NONE" ],
@@ -234,7 +234,8 @@
         [ "diffNoEOL", "WarningMsg" ],
         [ "diffOnly", "WarningMsg" ],
         [ "diffRemoved", "WarningMsg" ],
-        [ "diffAdded", "String" ]
+        [ "diffAdded", "String" ],
+        [ "QuickFixLine", "Search" ]
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -369,7 +370,6 @@
 " Last Change: <%= Time.new.strftime "%Y-%m-%d" %>
 
 hi clear
-
 if exists("syntax_on")
   syntax reset
 endif
