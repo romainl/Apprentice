@@ -45,7 +45,6 @@
         email:       "romainlafourcade@gmail.com",
         name:        "Apprentice",
         description: "Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)",
-        background:  "dark",
         webpage:     "https://github.com/romainl/Apprentice"
     }
 
@@ -380,11 +379,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 <% for highlight in highlights -%>
 <% if highlight.length == 4 -%>
     hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %>
-<% if highlight[0] == "Normal" -%>
-<%= '' %>
-    set background=<%= information[:background] %>
-<%= '' %>
-<% end -%>
 <% elsif highlight.length > 4 -%>
     hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][1] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][1] %> cterm=<%= highlight[3] %> guibg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][0] %> guifg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][0] %> gui=<%= highlight[3] %> guisp=<%= highlight[4].kind_of?(String) ? highlight[4] : highlight[4][0] %>
 <% end -%>
@@ -396,11 +390,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 <% for highlight in highlights -%>
 <% if highlight.length > 2 -%>
     hi <%= highlight[0] %> ctermbg=<%= highlight[1].kind_of?(String) ? highlight[1] : highlight[1][2] %> ctermfg=<%= highlight[2].kind_of?(String) ? highlight[2] : highlight[2][2] %> cterm=<%= highlight[3] %>
-<% if highlight[0] == "Normal" -%>
-<%= '' %>
-    set background=<%= information[:background] %>
-<%= '' %>
-<% end -%>
 <% end -%>
 <% end -%>
 endif
