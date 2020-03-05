@@ -220,6 +220,8 @@ A port of Apprentice is available for the IDEA platform. Check it out [over ther
 
 [apprentice-theme](https://github.com/sjas/apprentice-theme) is a port to spacemacs.
 
+[warlock](https://github.com/hardselius/warlock) is a brand new greyscale variant worth trying if Apprentice's already low contrast is still too much.
+
 Go team!
 
 [0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
