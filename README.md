@@ -222,6 +222,8 @@ A port of Apprentice is available for the IDEA platform. Check it out [over ther
 
 [Warlock](https://github.com/hardselius/warlock) is a brand new greyscale variant worth trying if Apprentice's already low contrast is still too much.
 
+[Apprentice-tmux](https://github.com/tombin/apprentice-tmux) is a tmux theme based on Apprentice.
+
 Go team!
 
 [0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
