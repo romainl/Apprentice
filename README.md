@@ -224,6 +224,8 @@ A port of Apprentice is available for the IDEA platform. Check it out [over ther
 
 [Apprentice-tmux](https://github.com/tombin/apprentice-tmux) is a tmux theme based on Apprentice.
 
+[Apprentice-kitty](https://github.com/rsaihe/apprentice-kitty) is a port for kitty.
+
 Go team!
 
 [0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
