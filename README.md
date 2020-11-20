@@ -228,6 +228,8 @@ I removed it from `master` but you can still find it in the "fancylines-and-neov
 
 * [Here](https://marketplace.visualstudio.com/items?itemName=amariampolskiy.theme-apprentice) is a port of Apprentice for Visual Studio Code.
 
+* [Apprentice-windows-terminal](https://github.com/guilhermedeandrade/apprentice-windows-terminal) is a port for Windows Terminal.
+
 Go team!
 
 [0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
