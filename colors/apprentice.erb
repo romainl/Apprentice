@@ -406,11 +406,13 @@ hi link <%= link[0] %> <%= link[1] %>
 <% end -%>
 <% if terminal_ansi_colors.length == 16 -%>
 <%= '' %>
-let g:terminal_ansi_colors = [
+if (has('termguicolors') && &termguicolors) || has('gui_running')
+    let g:terminal_ansi_colors = [
 <% for color in terminal_ansi_colors -%>
-        \ '<%= color[0] %>',
+            \ '<%= color[0] %>',
 <% end -%>
-        \ ]
+            \ ]
+endif
 <% end -%>
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)
