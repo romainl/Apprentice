@@ -407,11 +407,7 @@ hi link <%= link[0] %> <%= link[1] %>
 <% if terminal_ansi_colors.length == 16 -%>
 <%= '' %>
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = [
-<% for color in terminal_ansi_colors -%>
-            \ '<%= color[0] %>',
-<% end -%>
-            \ ]
+    let g:terminal_ansi_colors = [ <% for color in terminal_ansi_colors -%>'<%= color[0] %>', <% end -%>]
 endif
 <% end -%>
 
