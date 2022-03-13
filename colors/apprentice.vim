@@ -82,28 +82,28 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=black ctermfg=lightgrey cterm=NONE
+    hi Normal ctermbg=black ctermfg=white cterm=NONE
     hi NonText ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=darkgrey cterm=NONE
-    hi LineNr ctermbg=black ctermfg=lightgrey cterm=NONE
+    hi LineNr ctermbg=black ctermfg=darkgrey cterm=NONE
     hi FoldColumn ctermbg=black ctermfg=lightgrey cterm=NONE
     hi Folded ctermbg=black ctermfg=lightgrey cterm=NONE
     hi MatchParen ctermbg=black ctermfg=yellow cterm=NONE
     hi SignColumn ctermbg=black ctermfg=lightgrey cterm=NONE
-    hi Comment ctermbg=NONE ctermfg=darkgrey cterm=NONE
+    hi Comment ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi Constant ctermbg=NONE ctermfg=red cterm=NONE
-    hi Error ctermbg=NONE ctermfg=darkred cterm=reverse
+    hi Error ctermbg=darkred ctermfg=black cterm=reverse
     hi Identifier ctermbg=NONE ctermfg=darkblue cterm=NONE
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE
     hi PreProc ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi Special ctermbg=NONE ctermfg=darkgreen cterm=NONE
     hi Statement ctermbg=NONE ctermfg=blue cterm=NONE
     hi String ctermbg=NONE ctermfg=green cterm=NONE
-    hi Todo ctermbg=NONE ctermfg=NONE cterm=reverse
+    hi Todo ctermbg=white ctermfg=black cterm=reverse
     hi Type ctermbg=NONE ctermfg=magenta cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=darkcyan cterm=underline
-    hi Pmenu ctermbg=darkgrey ctermfg=lightgrey cterm=NONE
+    hi Pmenu ctermbg=darkgrey ctermfg=white cterm=NONE
     hi PmenuSbar ctermbg=darkgrey ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=darkcyan ctermfg=black cterm=NONE
     hi PmenuThumb ctermbg=darkcyan ctermfg=darkcyan cterm=NONE
@@ -116,7 +116,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineFill ctermbg=darkgrey ctermfg=darkgrey cterm=NONE
     hi TabLineSel ctermbg=darkyellow ctermfg=black cterm=NONE
     hi ToolbarLine ctermbg=black ctermfg=NONE cterm=NONE
-    hi ToolbarButton ctermbg=darkgrey ctermfg=lightgrey cterm=NONE
+    hi ToolbarButton ctermbg=darkgrey ctermfg=white cterm=NONE
     hi Cursor ctermbg=lightgrey ctermfg=NONE cterm=NONE
     hi CursorColumn ctermbg=darkgrey ctermfg=NONE cterm=NONE
     hi CursorLineNr ctermbg=darkgrey ctermfg=cyan cterm=NONE
@@ -127,7 +127,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusLineNC ctermbg=darkgrey ctermfg=darkyellow cterm=NONE
     hi StatusLineTerm ctermbg=darkyellow ctermfg=black cterm=NONE
     hi StatusLineTermNC ctermbg=darkgrey ctermfg=darkyellow cterm=NONE
-    hi Visual ctermbg=black ctermfg=blue cterm=reverse
+    hi Visual ctermbg=blue ctermfg=black cterm=reverse
     hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=underline
     hi VertSplit ctermbg=darkgrey ctermfg=darkgrey cterm=NONE
     hi WildMenu ctermbg=blue ctermfg=black cterm=NONE
