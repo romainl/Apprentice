@@ -1,0 +1,173 @@
+;;; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+
+;;; Information
+Full name:   apprentice
+Short name:  apprentice
+Description: Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
+Author:      Romain Lafourcade <romainlafourcade@gmail.com>
+Website:     https://github.com/romainl/Apprentice
+License:     MIT
+
+Variant:    gui 256 16
+Background: dark
+
+;;; Color palette
+Color: almost_black  #1c1c1c           234               black
+Color: darker_grey   #262626           235               black
+Color: dark_grey     #303030           236               darkgrey
+Color: grey          #444444           238               darkgrey
+Color: medium_grey   #585858           240               darkgrey
+Color: light_grey    #6c6c6c           242               lightgrey
+Color: lighter_grey  #bcbcbc           250               lightgrey
+Color: white         #ffffff           231               white
+Color: purple        #5f5f87           60                darkmagenta
+Color: light_purple  #8787af           103               magenta
+Color: green         #5f875f           65                darkgreen
+Color: light_green   #87af87           108               green
+Color: aqua          #5f8787           66                darkcyan
+Color: light_aqua    #5fafaf           73                cyan
+Color: blue          #5f87af           67                darkblue
+Color: light_blue    #87afd7           110               blue
+Color: red           #af5f5f           131               darkred
+Color: orange        #ff8700           208               red
+Color: ocre          #87875f           101               darkyellow
+Color: yellow        #ffffaf           229               yellow
+Color: DiffAdd       #87afff           111               cyan
+Color: DiffDelete    #ffdf87           222               yellow
+Color: DiffChange    #dfdfdf           188               lightgrey
+Color: DiffText      #afafaf           145               darkgrey
+
+Variant: gui 256 16
+;;; Chrome
+;;; Group            Foreground        Background        Attributes
+Normal               lighter_grey      darker_grey
+NonText              medium_grey       none
+EndOfBuffer          medium_grey       none
+LineNr               light_grey        almost_black
+FoldColumn           light_grey        almost_black
+Folded               light_grey        almost_black
+MatchParen           yellow            almost_black
+SignColumn           light_grey        almost_black
+Pmenu                lighter_grey      grey
+PmenuSbar            none              medium_grey
+PmenuSel             darker_grey       aqua
+PmenuThumb           aqua              aqua
+ErrorMsg             red               darker_grey       reverse
+ModeMsg              light_green       darker_grey       reverse
+MoreMsg              aqua              none
+Question             light_green       none
+WarningMsg           red               none
+TabLine              ocre              grey
+TabLineFill          grey              grey
+TabLineSel           darker_grey       ocre
+ToolbarLine          none              almost_black
+ToolbarButton        lighter_grey      medium_grey
+Cursor               none              light_grey
+CursorColumn         none              dark_grey
+CursorLineNr         light_aqua        dark_grey
+CursorLine           none              dark_grey
+StatusLine           darker_grey       ocre
+StatusLineNC         ocre              grey
+StatusLineTerm       darker_grey       ocre
+StatusLineTermNC     ocre              grey
+Visual               light_blue        darker_grey       reverse
+VisualNOS            none              none              underline
+VertSplit            grey              grey
+WildMenu             darker_grey       light_blue
+DiffAdd              DiffAdd           darker_grey       reverse
+DiffChange           DiffChange        darker_grey       reverse
+DiffDelete           DiffDelete        darker_grey       reverse
+DiffText             DiffText          darker_grey       reverse
+IncSearch            darker_grey       red
+Search               darker_grey       yellow
+Directory            light_aqua        none
+debugPC              none              blue
+debugBreakpoint      none              red
+SpellBad             red               none              undercurl s=red
+SpellCap             light_aqua        none              undercurl s=light_aqua
+SpellLocal           green             none              undercurl s=green
+SpellRare            orange            none              undercurl s=orange
+ColorColumn          none              almost_black
+
+;;; Group         link to
+Terminal          -> Normal
+CursorIM          -> Cursor
+QuickFixLine      -> Search
+
+;;; Syntax
+;;; Group            Foreground        Background        Attributes
+Comment              light_grey        none
+Conceal              lighter_grey      none
+Constant             orange            none
+Error                red               none              reverse
+Identifier           blue              none
+Ignore               none              none
+PreProc              aqua              none
+Special              green             none
+Statement            light_blue        none
+String               light_green       none
+Todo                 none              none              reverse
+Type                 light_purple      none
+Underlined           aqua              none              underline
+Function             yellow            none
+SpecialKey           medium_grey       none
+Title                white             none
+helpLeadBlank        none              none
+helpNormal           none              none
+
+;;; Group                           link to
+Number                              -> Constant
+Boolean                             -> Constant
+Character                           -> Constant
+Conditional                         -> Statement
+Debug                               -> Special
+Define                              -> PreProc
+Delimiter                           -> Special
+Exception                           -> Statement
+Float                               -> Number
+Include                             -> PreProc
+Keyword                             -> Statement
+Label                               -> Statement
+Macro                               -> PreProc
+Operator                            -> Statement
+PreCondit                           -> PreProc
+Repeat                              -> Statement
+SpecialChar                         -> Special
+SpecialComment                      -> Special
+StorageClass                        -> Type
+Structure                           -> Type
+Tag                                 -> Special
+Typedef                             -> Type
+HelpCommand                         -> Statement
+HelpExample                         -> Statement
+htmlTagName                         -> Statement
+htmlEndTag                          -> htmlTagName
+htmlLink                            -> Function
+htmlSpecialTagName                  -> htmlTagName
+htmlTag                             -> htmlTagName
+htmlBold                            -> Normal
+htmlItalic                          -> Normal
+htmlArg                             -> htmlTagName
+xmlTag                              -> Statement
+xmlTagName                          -> Statement
+xmlEndTag                           -> Statement
+markdownItalic                      -> Preproc
+asciidocQuotedEmphasized            -> Preproc
+diffBDiffer                         -> WarningMsg
+diffCommon                          -> WarningMsg
+diffDiffer                          -> WarningMsg
+diffIdentical                       -> WarningMsg
+diffIsA                             -> WarningMsg
+diffNoEOL                           -> WarningMsg
+diffOnly                            -> WarningMsg
+diffRemoved                         -> WarningMsg
+diffAdded                           -> String
+
+;;; Terminal
+Term colors: almost_black red green ocre blue purple aqua light_grey
+Term colors: grey orange light_green yellow light_blue light_purple light_aqua white
+
+;;; "Standard" diff colors
+
+;;; No color support
+Include: _tcozero

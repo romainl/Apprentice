@@ -178,7 +178,11 @@ See [this Gist](https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 
 ## Hacking Apprentice
 
-Apprentice now comes with the very template used to generate it: `colors/apprentice.erb`. The template, based on [vim-rnb](https://github.com/romainl/vim-rnb), is well maintained and documented.
+Originally written manually, Apprentice switched to a [romainl/vim-rnb](https://github.com/romainl/vim-rnb)-based template a few years ago, which made the life of the author and contributors much easier even if the rate of change had been pretty low for quite a while.
+
+Following the author's involvement with the [vim/colorschemes](https://github.com/vim/colorschemes), Apprentice is now using a noticeably more powerful templating system: [lifepillar/colortemplate](https://github.com/lifepillar/vim-colortemplate) that is on its way to become the official standard.
+
+You can find the template under `colortemplate/apprentice.colortemplate`. See `:help colortemplate` for further instructions.
 
 If you feel like making a pull request, make sure you commit both the modified template *and* the modified colorscheme.
 

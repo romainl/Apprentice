@@ -1,0 +1,67 @@
+; vim: ft=colortemplate cc=16,23,31 vsts=15,7,8,4
+
+; Template for black & white terminals
+Variant: 0
+
+; Group        Unused Unused  Term attributes
+Normal         omit   omit
+ColorColumn    omit   omit    reverse
+Conceal        omit   omit
+Cursor         omit   omit    reverse
+CursorColumn   omit   omit
+CursorLine     omit   omit    underline
+CursorLineNr   omit   omit    bold
+DiffAdd        omit   omit    reverse
+DiffChange     omit   omit
+DiffDelete     omit   omit    reverse
+DiffText       omit   omit    reverse
+Directory      omit   omit
+EndOfBuffer    omit   omit
+ErrorMsg       omit   omit    bold,reverse
+FoldColumn     omit   omit
+Folded         omit   omit
+IncSearch      omit   omit    reverse,bold,underline
+LineNr         omit   omit
+MatchParen     omit   omit    bold,underline
+ModeMsg        omit   omit    bold
+MoreMsg        omit   omit
+NonText        omit   omit
+Pmenu          omit   omit    reverse
+PmenuSbar      omit   omit    reverse
+PmenuSel       omit   omit    bold
+PmenuThumb     omit   omit
+Question       omit   omit    standout
+Search         omit   omit    reverse
+SignColumn     omit   omit    reverse
+SpecialKey     omit   omit    bold
+SpellBad       omit   omit    underline
+SpellCap       omit   omit    underline
+SpellLocal     omit   omit    underline
+SpellRare      omit   omit    underline
+StatusLine     omit   omit    reverse,bold
+StatusLineNC   omit   omit    bold,underline
+TabLine        omit   omit    underline,bold
+TabLineFill    omit   omit
+Terminal       omit   omit
+TabLineSel     omit   omit    reverse,bold
+Title          omit   omit
+VertSplit      omit   omit
+Visual         omit   omit    reverse
+VisualNOS      omit   omit
+WarningMsg     omit   omit    standout
+WildMenu       omit   omit    bold
+CursorIM       omit   omit
+ToolbarLine    omit   omit    reverse
+ToolbarButton  omit   omit    bold,reverse
+
+Comment        omit   omit    bold
+Constant       omit   omit
+Error          omit   omit    reverse,bold
+Identifier     omit   omit
+Ignore         omit   omit
+PreProc        omit   omit
+Special        omit   omit
+Statement      omit   omit
+Todo           omit   omit    reverse,bold
+Type           omit   omit
+Underlined     omit   omit    underline
