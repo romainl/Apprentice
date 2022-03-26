@@ -96,7 +96,7 @@ QuickFixLine      -> Search
 
 ;;; Syntax
 ;;; Group            Foreground        Background        Attributes
-Comment              medium_grey       none
+Comment              light_grey        none
 Conceal              lighter_grey      none
 Constant             orange            none
 Error                red               none              reverse
