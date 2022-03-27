@@ -4,21 +4,13 @@ Apprentice is a dark, low-contrast colorscheme for Vim based on the awesome [Sor
 
 It is essentially a streamlined version of the original, with a reduced number of colors entirely taken from the default xterm palette to ensure a similar look in 256colors-ready terminal emulators and GUI Vim.
 
-Some code in MacVim:
+Here is how it looks in the MacVim GUI:
 
-![image](http://romainl.github.io/Apprentice/images/0macvim.png)
+![image](http://romainl.github.io/Apprentice/images/macvim.app.png)
 
-Some code in iTerm, with `TERM=xterm-256color`:
+And here is how it looks in Terminal.app, with `TERM=xterm-256color`:
 
-![image](http://romainl.github.io/Apprentice/images/0256term.png)
-
-Some code in mintty, with `TERM=xterm-256color`:
-
-![image](http://romainl.github.io/Apprentice/images/0256mintty.png)
-
-Some code in iTerm, with `TERM=xterm`, using the Tango color palette:
-
-![image](http://romainl.github.io/Apprentice/images/08termtango.png)
+![image](http://romainl.github.io/Apprentice/images/terminal.app.png)
 
 ## Preparing your environment
 
@@ -104,14 +96,6 @@ And a sample `~/.minttyrc` for you Cygwin users:
     BoldCyan=95,175,175
     BoldWhite=255,255,255
 
-Some code in iTerm, with `TERM=xterm`, using the color palette above:
-
-![image](http://romainl.github.io/Apprentice/images/08termapprentice.png)
-
-Some code in the Windows console, with `TERM=cygwin`, using the color palette above:
-
-![image](http://romainl.github.io/Apprentice/images/016console.png)
-
 ### All terminal emulators
 
 I recommend adjusting your terminal's background color to the one used in Apprentice if you want to avoid having a “frame” around Vim:
@@ -149,6 +133,8 @@ Arch users may be happy to hear that Apprentice [has landed in AUR](https://aur.
 or download the `PKGBUILD` and do:
 
     $ makepkg -i
+
+NOTE: that package is maintained by a third-party so YMMV.
 
 ## Enabling Apprentice
 
