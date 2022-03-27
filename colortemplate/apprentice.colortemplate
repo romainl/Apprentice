@@ -62,7 +62,7 @@ TabLineFill          grey              grey
 TabLineSel           darker_grey       ocre
 ToolbarLine          none              almost_black
 ToolbarButton        lighter_grey      medium_grey
-Cursor               none              light_grey
+Cursor               darker_grey       lighter_grey
 CursorColumn         none              dark_grey
 CursorLineNr         light_aqua        dark_grey
 CursorLine           none              dark_grey
