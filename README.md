@@ -150,14 +150,14 @@ If you like what you see and want to make Apprentice your default colorscheme, a
 
 If you don't want to maintain your own fork of Apprentice you can add something like this to your `vimrc`, before `colorscheme apprentice`:
 
-    function! MyHighlights() abort
+    function! MyApprenticeOverrides() abort
         highlight Comment ctermfg=245
         highlight NonText ctermbg=17
     endfunction
 
     augroup MyColors
         autocmd!
-        autocmd ColorScheme * call MyHighlights()
+        autocmd ColorScheme apprentice call MyApprenticeOverrides()
     augroup END
 
 See [this Gist](https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f) for reference.
