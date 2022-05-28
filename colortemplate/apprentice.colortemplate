@@ -111,7 +111,7 @@ Type                 light_purple      none
 Underlined           aqua              none              underline
 Function             yellow            none
 SpecialKey           medium_grey       none
-Title                white             none
+Title                none              none
 helpLeadBlank        none              none
 helpNormal           none              none
 
@@ -153,15 +153,6 @@ xmlTagName                          -> Statement
 xmlEndTag                           -> Statement
 markdownItalic                      -> Preproc
 asciidocQuotedEmphasized            -> Preproc
-diffBDiffer                         -> WarningMsg
-diffCommon                          -> WarningMsg
-diffDiffer                          -> WarningMsg
-diffIdentical                       -> WarningMsg
-diffIsA                             -> WarningMsg
-diffNoEOL                           -> WarningMsg
-diffOnly                            -> WarningMsg
-diffRemoved                         -> WarningMsg
-diffAdded                           -> String
 
 ;;; Terminal
 Term colors: almost_black red green ocre blue purple aqua light_grey
