@@ -68,7 +68,7 @@ hi SpellRare guifg=#ff8700 guibg=NONE guisp=#ff8700 gui=undercurl cterm=undercur
 hi ColorColumn guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
 hi! link Terminal Normal
 hi! link CursorIM Cursor
-hi! link QuickFixLine Search
+hi! link QuickFixLine Normal
 hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
 hi Conceal guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#ff8700 guibg=NONE gui=NONE cterm=NONE
@@ -176,7 +176,7 @@ if s:t_Co >= 256
   hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE
   hi! link Terminal Normal
   hi! link CursorIM Cursor
-  hi! link QuickFixLine Search
+  hi! link QuickFixLine Normal
   hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
   hi Conceal ctermfg=250 ctermbg=NONE cterm=NONE
   hi Constant ctermfg=208 ctermbg=NONE cterm=NONE
@@ -287,7 +287,7 @@ if s:t_Co >= 16
   hi ColorColumn ctermfg=NONE ctermbg=black cterm=NONE
   hi! link Terminal Normal
   hi! link CursorIM Cursor
-  hi! link QuickFixLine Search
+  hi! link QuickFixLine Normal
   hi Comment ctermfg=lightgrey ctermbg=NONE cterm=NONE
   hi Conceal ctermfg=lightgrey ctermbg=NONE cterm=NONE
   hi Constant ctermfg=red ctermbg=NONE cterm=NONE

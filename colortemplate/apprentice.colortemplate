@@ -92,7 +92,7 @@ ColorColumn          none              almost_black
 ;;; Group         link to
 Terminal          -> Normal
 CursorIM          -> Cursor
-QuickFixLine      -> Search
+QuickFixLine      -> Normal
 
 ;;; Syntax
 ;;; Group            Foreground        Background        Attributes
