@@ -226,6 +226,10 @@ I removed it from `master` but you can still find it in the "fancylines-and-neov
 
 * [Saturnite](https://github.com/habamax/vim-saturnite) is a colorscheme for week-end coders adapted from Apprentice.
 
+* [prism-apprentice](https://github.com/Camroku/prism-apprentice) is a port to Prism.JS.
+
+* [apprentice.css](https://github.com/Camroku/apprentice.css) is a CSS file without classes to make simple websites with Apprentice.
+
 Go team!
 
 [0]:  http://romainl.github.io/Apprentice/images/1c1c1c.png
