@@ -107,6 +107,8 @@ ColorColumn          none              almost_black
 Terminal          -> Normal
 CursorIM          -> Cursor
 QuickFixLine      -> Search
+CurSearch         -> IncSearch
+
 
 ;;; Syntax
 ;;; Group            Foreground        Background        Attributes
