@@ -5,11 +5,12 @@ Full name:   apprentice
 Short name:  apprentice
 Description: Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
 Author:      Romain Lafourcade <romainlafourcade@gmail.com>
-Website:     https://github.com/romainl/Apprentice
+URL:         https://github.com/romainl/Apprentice
 License:     MIT
+Options:     backend=vim
 
-Variant:    gui 256 16
-Background: dark
+Environments: gui 256 16 0
+Background:   dark
 
 ;;; Color palette
 Color: almost_black  #1c1c1c           234               black
@@ -37,26 +38,16 @@ Color: DiffDelete    #ffdf87           222               yellow
 Color: DiffChange    #dfdfdf           188               lightgrey
 Color: DiffText      #afafaf           145               darkgrey
 
-Variant: gui 256 16
 ;;; Chrome
 ;;; Group            Foreground        Background        Attributes
 Normal               lighter_grey      darker_grey
 
-Variant: gui 256
 ;;; Chrome
 ;;; Group            Foreground        Background        Attributes
 CursorLineNr         none              dark_grey
 CursorLine           none              dark_grey
-
-Variant: 16
-;;; Chrome
-;;; Group            Foreground        Background        Attributes
-CursorLineNr         none              none              underline
-CursorLine           none              none              underline
-
-Variant: gui 256 16
-;;; Chrome
-;;; Group            Foreground        Background        Attributes
+CursorLineNr /16     none              none              underline
+CursorLine   /16     none              none              underline
 NonText              medium_grey       none
 EndOfBuffer          medium_grey       none
 LineNr               light_grey        almost_black
@@ -97,10 +88,10 @@ Search               darker_grey       yellow
 Directory            light_aqua        none
 debugPC              none              blue
 debugBreakpoint      none              red
-SpellBad             red               none              undercurl s=red
-SpellCap             light_aqua        none              undercurl s=light_aqua
-SpellLocal           green             none              undercurl s=green
-SpellRare            orange            none              undercurl s=orange
+SpellBad             red               none              s=red        undercurl
+SpellCap             light_aqua        none              s=light_aqua undercurl
+SpellLocal           green             none              s=green      undercurl
+SpellRare            orange            none              s=orange     undercurl
 ColorColumn          none              almost_black
 
 ;;; Group         link to
@@ -171,8 +162,9 @@ markdownItalic                      -> Preproc
 asciidocQuotedEmphasized            -> Preproc
 
 ;;; Terminal
-Term colors: almost_black red green ocre blue purple aqua light_grey
-Term colors: grey orange light_green yellow light_blue light_purple light_aqua white
+Term colors:
+  almost_black red green ocre blue purple aqua light_grey
+  grey orange light_green yellow light_blue light_purple light_aqua white
 
 ;;; No color support
 Include: _tcozero
